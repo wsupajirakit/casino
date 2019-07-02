@@ -3,50 +3,74 @@ include('./env/config.php');
 error_reporting(0);
 ini_set('display_errors', 0);
 
+$set_code = mt_rand(1111, 9999);
 
 if(isset($_POST['submit']))
 {
 
-				if (session_status() == PHP_SESSION_NONE) {
-						session_start();
-				}
 
-								$username = $_POST['username'];
-								$password = $_POST['password'];
 
-								$strSQL = "SELECT * FROM user WHERE username =  '$username' and password = '$password'";
-								$objQuery = mysqli_query($objCon,$strSQL);
-								$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
-								if(!$objResult)
-								{
 
-									echo '<script type="text/javascript">';
-									echo 'setTimeout(function () {';
-									echo 'swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning").then( function(val) {';
-									echo 'if (val == true) window.location.href = \'login.php\';';
-									echo '});';
-									echo '}, 200);  </script>';
+		$code = $_POST['code'];
+		$legacy_code = $_POST['legacy_code'];
 
-	
-								}
-								else
-								{
-										$_SESSION["id"] = $objResult["id"];
-										$_SESSION["username"] = $objResult["username"];
-										$_SESSION["role"] = $objResult["role"];
-										session_write_close();
 
-										if($objResult["role"] == "admin")
-										{
-											header("location:index.html");
-										}
-										else
-										{
-											// header("location:user_page.php");
-										}
-								}
+			if ( strcasecmp( $legacy_code, $code ) == 0 ){
 
-								mysqli_close($objCon);
+
+							if (session_status() == PHP_SESSION_NONE) {
+									session_start();
+							}
+
+											$username = $_POST['username'];
+											$password = $_POST['password'];
+
+											$strSQL = "SELECT * FROM user WHERE username =  '$username' and password = '$password'";
+											$objQuery = mysqli_query($objCon,$strSQL);
+											$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
+											if(!$objResult)
+											{
+
+												echo '<script type="text/javascript">';
+												echo 'setTimeout(function () {';
+												echo 'swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning").then( function(val) {';
+												echo 'if (val == true) window.location.href = \'login.php\';';
+												echo '});';
+												echo '}, 200);  </script>';
+
+
+											}
+											else
+											{
+													$_SESSION["id"] = $objResult["id"];
+													$_SESSION["username"] = $objResult["username"];
+													$_SESSION["role"] = $objResult["role"];
+													session_write_close();
+
+													if($objResult["role"] == "admin")
+													{
+														header("location:index.html");
+													}
+													else
+													{
+														// header("location:user_page.php");
+													}
+											}
+
+											mysqli_close($objCon);
+
+
+		}else{
+			echo '<script type="text/javascript">';
+			echo 'setTimeout(function () {';
+			echo 'swal("ล้มเหลว!","Code ยืนยันไม่ถูกต้อง","warning").then( function(val) {';
+			echo 'if (val == true) window.location.href = \'login.php\';';
+			echo '});';
+			echo '}, 200);  </script>';
+		}
+
+
+
 
 			}
 
@@ -100,23 +124,21 @@ if(isset($_POST['submit']))
 						<div class="login-container">
 							<div class="center">
 								<h1>
-									<i class="ace-icon fa fa-leaf green"></i>
-									<span class="red">Ace</span>
-									<span class="white" id="id-text2">Application</span>
 								</h1>
-								<h4 class="blue" id="id-company-text">&copy; Company Name</h4>
+								<img src="./assets/images/logo/RCA777.png" height="90" width="180">
+								<h4 class="white" id="id-company-text">&copy; RCA777.com</h4>
 							</div>
 
 							<div class="space-6"></div>
 
 							<div class="position-relative">
 								<div id="login-box" class="login-box visible widget-box no-border">
-									<div class="widget-body">
-										<div class="widget-main">
-											<h4 class="header blue lighter bigger">
+
+
+											<!-- <h4 class="header blue lighter bigger">
 												<i class="ace-icon fa fa-coffee green"></i>
 												Please Enter Your Information
-											</h4>
+											</h4> -->
 
 											<div class="space-6"></div>
 
@@ -138,13 +160,26 @@ if(isset($_POST['submit']))
 
 													<div class="space"></div>
 
+
 													<div class="clearfix">
-														<label class="inline">
+														<span class="width-50 input-icon input-icon-right">
+															<input type="text" id="code" name="code" class="form-control" placeholder="code" />
+															<input type="hidden" id="legacy_code" name="legacy_code" class="form-control" placeholder="code" value="<?php echo $set_code;?>"/>
+															<i class="ace-icon fa fa-lock"></i>
+														</span>
+
+														<button type="#" name="#" class="width-50 pull-right btn btn-sm btn-dark" value="1234">
+															<span class="bigger-110"><?php echo $set_code;?></span>
+														</button>
+													</div>
+													<br>
+													<div class="clearfix">
+														<!-- <label class="inline">
 															<input type="checkbox" class="ace" />
 															<span class="lbl"> Remember Me</span>
-														</label>
+														</label> -->
 
-														<button type="submit" name="submit" class="width-35 pull-right btn btn-sm btn-primary">
+														<button type="submit" name="submit" class="width-100 pull-right btn btn-sm btn-dark">
 															<i class="ace-icon fa fa-key"></i>
 															<span class="bigger-110">Login</span>
 														</button>
@@ -154,42 +189,12 @@ if(isset($_POST['submit']))
 												</fieldset>
 											</form>
 
-											<div class="social-or-login center">
-												<span class="bigger-110">Or Login Using</span>
-											</div>
 
-											<div class="space-6"></div>
 
-											<div class="social-login center">
-												<a class="btn btn-primary">
-													<i class="ace-icon fa fa-facebook"></i>
-												</a>
 
-												<a class="btn btn-info">
-													<i class="ace-icon fa fa-twitter"></i>
-												</a>
 
-												<a class="btn btn-danger">
-													<i class="ace-icon fa fa-google-plus"></i>
-												</a>
-											</div>
-										</div><!-- /.widget-main -->
 
-										<div class="toolbar clearfix">
-											<div>
-												<a href="#" data-target="#forgot-box" class="forgot-password-link">
-													<i class="ace-icon fa fa-arrow-left"></i>
-													I forgot my password
-												</a>
-											</div>
 
-											<div>
-												<a href="#" data-target="#signup-box" class="user-signup-link">
-													I want to register
-													<i class="ace-icon fa fa-arrow-right"></i>
-												</a>
-											</div>
-										</div>
 									</div><!-- /.widget-body -->
 								</div><!-- /.login-box -->
 
@@ -311,7 +316,7 @@ if(isset($_POST['submit']))
 								</div><!-- /.signup-box -->
 							</div><!-- /.position-relative -->
 
-							<div class="navbar-fixed-top align-right">
+							<!-- <div class="navbar-fixed-top align-right">
 								<br />
 								&nbsp;
 								<a id="btn-login-dark" href="#">Dark</a>
@@ -324,7 +329,7 @@ if(isset($_POST['submit']))
 								&nbsp;
 								<a id="btn-login-light" href="#">Light</a>
 								&nbsp; &nbsp; &nbsp;
-							</div>
+							</div> -->
 						</div>
 					</div><!-- /.col -->
 				</div><!-- /.row -->
