@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -451,7 +451,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-money"></i>
 							<span class="menu-text"> Cash </span>
@@ -471,7 +471,7 @@
 								<b class="arrow"></b>
 							</li>
 							
-							<li class="">
+							<li class="active">
 								<a href="cash-bank.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bank
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">Bank</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,112 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row pdTop">
+    <div class="widget-body" id="loadBank">
+        <div class="widget-main">
+
+            <div class="row">
+                <div class="col-xs-12 widthTable">
+                    
+                    <form class="form-horizontal" id="frnAddBank" action="https://mm8betag.234ag.net/main" method="post">
+                        <div class="form-group">
+                            <label class="col-xs-12 col-sm-2 control-label "><strong> Account number : </strong></label>
+                            <div class="col-xs-10 col-sm-2">
+                                <input type="text" id="bank_account_number" name="bank_account_number" placeholder="number" class="col-xs-12 col-sm-12" data-validation="number length" data-validation-error-msg-number="value number" data-validation-length="10" data-validation-error-msg-length="value length 10">
+                            </div>
+                            <label class="col-xs-12 col-sm-2 control-label "><strong> Account name : </strong></label>
+                            <div class="col-xs-10 col-sm-2">
+                                <input type="text" id="bank_account_name" name="bank_account_name" placeholder="name" class="col-xs-12 col-sm-12">
+                            </div>
+                            <label class="col-xs-12 col-sm-2 control-label "><strong> Account branch : </strong></label>
+                            <div class="col-xs-10 col-sm-2">
+                                <input type="text" id="bank_account_branch" name="bank_account_branch" placeholder="branch" class="col-xs-12 col-sm-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 col-sm-2 control-label "><strong> Bank : </strong></label>
+                            <div class="col-sm-2">
+                                <select class="form-control col-xs-12 col-sm-6" id="bank_id" name="bank_id">
+                                                                                                                        <option value="0">No select bank</option>
+                                                                                    <option value="1">Kasikorn Bank</option>
+                                                                                    <option value="2">Bangkok Bank</option>
+                                                                                    <option value="3">Bank of  Ayudhya</option>
+                                                                                    <option value="4">Siam Commercial Bank</option>
+                                                                                    <option value="5">Krung Thai Bank</option>
+                                                                                    <option value="6">Siam City Bank</option>
+                                                                                    <option value="7">United Overseas Bank</option>
+                                                                                    <option value="8">Thai Military Bank</option>
+                                                                                    <option value="9">Tisco bank</option>
+                                                                                    <option value="10">Industrial and Commercial Bank of China (Thai)</option>
+                                                                                    <option value="11">Kiatnakin Bank</option>
+                                                                                    <option value="12">Thanachart Bank</option>
+                                                                                    <option value="13">STANDARD CHARTERED BANK (THAI)</option>
+                                                                                    <option value="14">Government Housing Bank</option>
+                                                                                    <option value="15">Land and House Bank</option>
+                                                                                    <option value="16">Government Savings Bank</option>
+                                                                                    <option value="17">Bank for Agriculture and Agricultural Cooperatives</option>
+                                                                                    <option value="18">Islamic Bank of Thailand</option>
+                                                                                                            </select>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <label style="margin-top:5px;">&nbsp;&nbsp;
+                                    <input name="flag_deposit" id="flag_deposit" class="ace ace-switch ace-switch-6" type="checkbox" value="Y">
+                                    <span class="lbl">&nbsp;&nbsp;Deposit</span>
+                                </label>
+                                <label>
+                                    <input name="flag_withdrawal" id="flag_withdrawal" class="ace ace-switch ace-switch-6" type="checkbox" value="Y">
+                                    <span class="lbl">&nbsp;&nbsp;Withdrawal</span>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-3" style="margin-top:5px;">
+                                <button type="button" name="btSave" value="save" class="btn btn-minier btn-success" onclick="cashBankSave(&#39;save&#39;);">
+                                    <i class="ace-icon fa fa-floppy-o bigger-150"></i>
+                                    Save                                </button>
+                                <button class="btn btn-minier btn-danger" type="button" name="btDel" value="del" onclick="cashBankSave(&#39;del&#39;);">
+                                    <i class="ace-icon fa fa-trash-o bigger-150"></i>
+                                    Delete                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="clearfix">
+                        <div class="pull-right tableTools-container"></div>
+                    </div>
+                    <!-- <div class="table-header" style="background-color:#074E68">
+                        Results for "All Bank"
+                    </div> -->
+
+                    <!-- div.table-responsive -->
+
+                    <!-- div.dataTables_borderWrap -->
+                    <div class="table-responsive">
+                        <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="center">Account number </th>
+                                    <th>Account name</th>
+                                    <th>Account branch</th>
+                                    <th>Bank</th>
+                                    <th>Deposit</th>
+                                    <th>Withdrawal</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                                                    <tr>
+                                        <td align="center" colspan="6"><strong>No Data</strong></td>
+                                    </tr>
+                                                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+</div>						
 
 					
 

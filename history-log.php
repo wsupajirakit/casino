@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -306,7 +306,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="history-log.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									History Log
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">History Log</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,154 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadLog">
+        <div class="widget-header hidden">
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
+                    <i class="ace-icon fa fa-refresh"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+                        <form class="form-horizontal" id="frmSearchDeposit">
+                        </form>
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab4">
+                                <li class="active">
+                                    <a data-toggle="tab" href="https://mm8betag.234ag.net/main#home4" aria-expanded="true">Login Log</a>
+                                </li>
+
+                                <li class="">
+                                    <a data-toggle="tab" href="https://mm8betag.234ag.net/main#profile4" aria-expanded="false" onclick="searchLog(&#39;changePassLog&#39;);">Change Password Log</a>
+                                </li>
+
+                                <li class="">
+                                    <a data-toggle="tab" href="https://mm8betag.234ag.net/main#dropdown14" aria-expanded="false" onclick="searchLog(&#39;setupLog&#39;);">Log Setting</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="home4" class="tab-pane active">
+                                    <div class="table-responsive">
+                                        <table id="tbLoginLog" class="table table-striped table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center"> User ID </th>
+                                                    <th class="text-center"> Login Date </th>
+                                                    <th class="text-center"> Logout Date </th>
+                                                    <th class="text-center"> Login IP </th>
+                                                    <th class="text-center"> Status </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>            <tr>
+            <td align="center">Admin</td>
+            <td align="center">2019-07-03 03:15:14</td>
+            <td align="center"></td>
+            <td align="center">192.168.1.1</td>
+            <td align="center">A</td>
+        </tr>
+            <tr>
+            <td align="center">Admin</td>
+            <td align="center">2019-07-03 03:15:14</td>
+            <td align="center"></td>
+            <td align="center">192.168.1.1</td>
+            <td align="center">A</td>
+        </tr>
+            <tr>
+            <td align="center">Admin</td>
+            <td align="center">2019-07-03 03:15:14</td>
+            <td align="center"></td>
+            <td align="center">192.168.1.1</td>
+            <td align="center">A</td>
+        </tr>
+            <tr>
+            <td align="center">Admin</td>
+            <td align="center">2019-07-03 03:15:14</td>
+            <td align="center"></td>
+            <td align="center">192.168.1.1</td>
+            <td align="center">A</td>
+        </tr>
+            
+    </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="profile4" class="tab-pane">
+                                    <div class="table-responsive">
+                                        <table id="tbChangePassLog" class="table table-striped table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center"> Main User </th>
+                                                    <th class="text-center"> Sub User </th>
+                                                    <th class="text-center"> Edit User </th>
+                                                    <th class="text-center"> Date/Time </th>
+                                                    <th class="text-center"> IP </th>
+                                                    <th class="text-center"> Status </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="6" align="center">No Data</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="dropdown14" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 col-sm-2">
+                                                    <input type="text" id="user" name="user" placeholder="User" value="" class="col-xs-12 col-sm-12">
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2">
+                                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchLog(&#39;setupLog&#39;);">
+                                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                                        Search                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="table-responsive">
+                                                <table id="tbSetupLog" class="table table-striped table-bordered table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"> Date/Time </th>
+                                                            <th class="text-center"> Agent </th>
+                                                            <th class="text-center"> User </th>
+                                                            <th class="text-center"> Log Type </th>
+                                                            <th class="text-center"> Old Value </th>
+                                                            <th class="text-center"> New Value </th>
+                                                            <th class="text-center"> IP </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="7" align="center">No Data</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>						
 
 					
 

@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -279,7 +279,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="sub-agent.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Sub Agent
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">Sub Agent</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,143 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="loadSubAgent">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> Sub Agent</strong></h4>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+                        <form class="form-horizontal" id="frmSubAgent" action="https://mm8betag.234ag.net/main" method="post">
+                            <div class="form-group">
+                                <label class="col-xs-3 col-sm-1 control-label no-padding-right"> Username </label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <strong> mmm88xxt@</strong>
+                                            <input type="hidden" name="usermain" value="mmm88xxt@">
+                                        </span>
+                                        <input type="text" id="username" name="username" placeholder="Username" class="col-xs-12 col-sm-12">
+                                    </div>
+                                </div>
+                                <label class="col-xs-3 col-sm-1 control-label no-padding-right"> Password </label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="password" id="password" name="password" placeholder="Password" class="col-xs-10 col-sm-8">
+                                    &nbsp;<i class="fa fa-pencil-square-o fa-2x" id="iconEditPass" onclick="$(&#39;#password&#39;).prop(&#39;disabled&#39;,false);" style="display:none;"></i>
+                                </div>
+                                <label class="col-xs-3 col-sm-1 control-label"> Name </label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="name" name="name" placeholder="Name" class="col-xs-10 col-sm-10">
+                                </div>
+                                <label class="col-xs-3 col-sm-1 control-label "> Remark </label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="remark" name="remark" placeholder="Remark" class="col-xs-10 col-sm-12">
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 col-sm-1 control-label no-padding-right"> Status </label>
+                                <div class="col-xs-9 col-sm-1">
+                                    <select class="form-control col-xs-6 col-sm-6 input-sm" id="status" name="status">
+                                        <option value="Y" selected="">Normal</option>
+                                        <option value="N" selected="">Lock</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-9">
+                                    <label style="margin-right: 5px;margin-top:10px;">
+                                        <input name="ckRegister" id="ckRegister" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Register </span>
+
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckCredit" id="ckCredit" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Credit </span>
+                                    </label>
+                                    <label style="margin-right: 10px;">
+                                        <input name="ckTransfer" id="ckTransfer" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Transfer </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckSetup" id="ckSetup" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Setup </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckWinLoss" id="ckWinLoss" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Win/loss </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckCash" id="ckCash" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Cash </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckOpenClose" id="ckOpenClose" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Open/Close </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckLiveChat" id="ckLiveChat" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Live Chat </span>
+                                    </label>
+                                    <label style="margin-right: 5px;">
+                                        <input name="ckReport" id="ckReport" class="ace ace-checkbox-2" type="checkbox" value="Y">
+                                        <span class="lbl"> Report </span>
+                                    </label>
+                                    <button type="button" name="btsave" value="save" class="btn btn-success btn-minier" onclick="saveSubAgent(&#39;save&#39;);">
+                                        <i class="ace-icon fa fa-floppy-o bigger-150"></i>
+                                        Save                                    </button>
+                                    <button type="button" name="btdel" value="del" class="btn btn-minier btn-danger " onclick="saveSubAgent(&#39;del&#39;);">
+                                        <i class="ace-icon fa fa-trash-o bigger-150"></i>
+                                        Delete                                    </button>
+                                </div>
+                               
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <!-- <div class="table-header" style="background-color:#1D87B1;">
+                            Results for "All Sub Agent"
+                        </div> -->
+
+                        <!-- div.table-responsive -->
+                        <div class="table-responsive">
+                            <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="center">Username </th>
+                                        <th>Name</th>
+                                        <th>Status</th>
+                                        <th>Register</th>
+                                        <th>Credit</th>
+                                        <th>Transfer</th>
+                                        <th>Setup</th>
+                                        <th>Win/loss</th>
+                                        <th>Cash</th>
+                                        <th>Open/Close</th>
+                                        <th>Live Chat</th>
+                                        <th>Report</th>
+                                        <th>Remark</th>
+                                        <th>Online</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                                                            <tr>
+                                            <td colspan="12" align="center">no data</td>
+                                        </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>						
 
 					
 

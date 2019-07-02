@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -234,7 +234,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="user-status.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Status
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">User Status</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,119 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="relodUStatus">
+        <div class="widget-header widget-header-blue widget-header-flat hidden">
+            <h4 class="widget-title lighter"><strong> User Status </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
+                    <i class="ace-icon fa fa-refresh"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <form class="form-horizontal" id="userReturnForm">
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-1 no-padding-right" for="fuser">Username:</label>
+                                <div class="col-xs-12 col-sm-3">
+                                    <input type="text" id="fuser" name="fuser" class="col-xs-12 col-sm-12" placeholder="Username">
+                                </div>
+                                <div class="col-xs-6 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="fuactive" onchange="getUStatus(1,1);">
+                                        <option value="Y">Normal</option>
+                                        <option value="B">No Bet</option>
+                                        <option value="N">Lock</option>
+                                        <option value="A">All</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="futype" onchange="getUStatus(1,1);">
+                                        <option value="M">Member</option>
+                                        <option value="A">Agent</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="list_sort" onchange="getUStatus(1,1);">
+                                        <option value="1">Create date by descending</option>
+                                        <option value="2">Create date by ascending</option>
+                                        <option value="3">Username by descending</option>
+                                        <option value="4">Username by ascending</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-2">
+                                    <button type="button" class="btn btn-primary btn-sm" id="btn_search">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="widget-box">
+                            <div class="widget-body">
+                                <div class="widget-main no-padding">
+                                    <div class="table-responsive">
+                                        <table id="tb_userstatus" class="table table-striped table-bordered table-hover text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="3" class="center">No </th>
+                                                    <th rowspan="3" class="center">Edit </th>
+                                                    <th rowspan="3"> Username </th>
+                                                    <th colspan="12"><center>Status</center></th>
+                                                </tr>
+                                                <tr>
+                                                                                                                                                                        <th>
+                                                                <span class="lbl"> Step </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> SC.Today </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> SC.Live </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> SP.Today </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> SP.Live </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Game </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Casino </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Lottery </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Lotto </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Lotto SET </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Lotto Lao </span>
+                                                            </th>
+                                                                                                                    <th>
+                                                                <span class="lbl"> Transfer </span>
+                                                            </th>
+                                                                                                                                                            </tr>
+                                            </thead>
+                                            <tbody><tr><td colspan="15" class="text-danger"> Not found data. </td></tr></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                            </div>
+        </div>
+    </div>
+</div>			
 
 					
 

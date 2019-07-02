@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -451,7 +451,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-money"></i>
 							<span class="menu-text"> Cash </span>
@@ -489,7 +489,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="cash-withdrawal-list.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Withdrawal List
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">Withdrawal list</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,114 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadWithdrawal">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> Withdrawal List </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 widthTable">
+                        <form class="form-horizontal" id="frmSearch">
+                            <div class="form-group">
+                                <label class="col-xs-12 col-sm-1 control-label"><strong>User ID  : </strong></label>
+                                <div class="col-xs-12 col-sm-3">
+                                    <input type="text" id="username" name="username" placeholder="name" value="" class="col-xs-10 col-sm-12">
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <select class="form-control col-xs-12 col-sm-6 input-sm" id="status" name="status">
+                                        <option value="NB">Wait Checking or Add Credit </option>
+                                        <option value="N">Wait Checking </option>
+                                        <option value="B">Wait Add Credit </option>
+                                        <option value="Y">Complete </option>
+                                        <option value="C">Reject </option>
+                                        <option value="A">All </option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchWithdrawalList(this);">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search 
+                                    </button>
+                                    <button type="button" disabled="" class="btn btn-sm btn-yellow">
+                                        <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 26 &nbsp;&nbsp;</div>
+                                        <script type="text/javascript">
+                                            // timeCountDown('search');
+                                            function timeCountDownWithdrawal(){
+
+                                                var fiveSeconds = new Date().getTime() + 59000;
+                                                $('#clock').countdown(fiveSeconds, function(event) {
+                                                var $this = $(this).html(event.strftime('<i class="fa fa-refresh fa-spin" aria-hidden="true"></i> %S &nbsp;&nbsp;'));
+
+                                                    if(event.strftime('%S')==0){
+                                                        searchWithdrawalList('');
+                                                        timeCountDownWithdrawal();
+                                                    }
+
+                                                });
+                                            }
+                                            timeCountDownWithdrawal();
+                                        </script>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <!-- <div class="table-header" >
+                            Results for "All Withdrawal"
+                        </div> -->
+                        <div class="table-responsive">
+                            <table id="tbWithdrawalList" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Refer  </th>
+                                        <th class="text-center">User ID </th>
+                                        <th class="text-center">Bank </th>
+                                        <th class="text-center">Account number </th>
+                                        <th class="text-center">Account name </th>
+                                        <th class="text-center">withdrawal date/time </th>
+                                        <th class="text-center">Number Money </th>
+                                        <th class="text-center">Checking </th>
+                                        <th class="text-center">Transfer </th>
+                                        <th class="text-center">Cancel </th>
+                                        <th class="text-center">Log </th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr><td colspan="11"><center>No Data</center></td></tr></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="11">
+                                            Page  <span class="badge badge-primary" name="pageNum">1</span> || Show  <span name="listCount">0</span> Row 
+                                            <div class="form-group pull-right">
+                                                <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="disabled" onclick="searchWithdrawalList(this);">
+                                                    <i class="ace-icon fa fa-arrow-left"></i>Prev 
+                                                </button>
+                                                
+                                                <button type="button" class="btn btn-success btn-next btn-sm" disabled="disabled" name="nextPage" onclick="searchWithdrawalList(this);">
+                                                    Next  <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="showModal"></div>
+</div>						
 
 					
 

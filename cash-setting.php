@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -451,7 +451,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-money"></i>
 							<span class="menu-text"> Cash </span>
@@ -462,7 +462,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="">
+							<li class="active">
 								<a href="cash-setting.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Setting
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">Setting</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,108 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="pdTop">
+    <div class="widget-box col-sm-8" id="loadSetting">
+        <form class="form-horizontal" id="frmSetting" name="frmSetting" action="https://mm8betag.234ag.net/main" method="post">
+            <div class="">
+                <h4 class="widget-title lighter smaller">
+                    &nbsp;&nbsp;
+                    <strong> Cash System</strong>
+                    <label class="widget-toolbar no-border">
+                        <input name="show_member" id="show_member" class="ace ace-switch ace-switch-6" type="checkbox" value="Y">
+                        <span class="lbl">&nbsp;&nbsp;</span>
+                    </label>
+                </h4>
+            </div>
+            <div class="widget-body">
+               <div class="widget-main no-padding">
+                    <div class="dialogs">
+                        <div class="itemdiv dialogdiv">
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Member Deposit : </strong></label>
+                                <div class="col-xs-4 col-sm-4">
+                                    <select class="form-control col-xs-2 col-sm-6" id="deposit_open" name="deposit_open">
+                                        <option value="Y">Open</option>
+                                        <option value="N">Close</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong>Deposit minimum : </strong></label>
+                                <div class="col-xs-8 col-sm-5">
+                                    <input type="text" id="deposit_min" name="deposit_min" placeholder="minimum" class="col-xs-10 col-sm-12 numeric" value="0.00">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Deposit maximum : </strong></label>
+                                <div class="col-xs-8 col-sm-5">
+                                    <input type="text" id="deposit_max" name="deposit_max" placeholder="maximum" class="col-xs-10 col-sm-12 numeric" value="0.00">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Member Withdraw : </strong></label>
+                                <div class="col-xs-4 col-sm-4">
+                                    <select class="form-control col-xs-12 col-sm-6" id="withdrawal_open" name="withdrawal_open">
+                                        <option value="Y">Open</option>
+                                        <option value="N">Close</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Withdrawal Count/Day : </strong></label>
+                                <div class="col-xs-8 col-sm-5">
+                                    <input type="text" id="withdrawal_count" name="withdrawal_count" placeholder="minimum" class="col-xs-10 col-sm-12" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Withdrawal minimum : </strong></label>
+                                <div class="col-xs-8 col-sm-5">
+                                    <input type="text" id="withdrawal_min" name="withdrawal_min" placeholder="maximum" class="col-xs-10 col-sm-12 numeric" value="0.00">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Withdrawal Max : </strong></label>
+                                <div class="col-xs-8 col-sm-5">
+                                    <input type="text" id="withdrawal_max" name="withdrawal_max" placeholder="maximum" class="col-xs-10 col-sm-12 numeric" value="0.00">
+                                </div>
+                            </div><hr>
+                            <div class="form-group">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Live Chat Member : </strong></label>
+                                <div class="col-xs-4 col-sm-4">
+                                    <select class="form-control col-xs-12 col-sm-6" id="livechat_member" name="livechat_member">
+                                        <option value="N" selected="">Close</option>
+                                        <option value="Y">Open</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group" style="display:none;">
+                                <label class="col-xs-4 col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Live Chat Agent : </strong></label>
+                                <div class="col-xs-4 col-sm-4">
+                                    <select class="form-control col-xs-12 col-sm-6" id="livechat_agent" name="livechat_agent">
+                                        <option value="N" selected="">Close</option>
+                                        <option value="Y">Open</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <div class="col-md-offset-4 col-md-8">
+                                    <button type="button" class="btn btn-primary" onclick="cashSettingSave();">
+                                        <span class="fa fa fa-floppy-o icon-on-right bigger-110"></span>
+                                        Save                                    </button>
+                                    <button type="reset" class="btn btn-danger ">
+                                        <span class="fa fa-refresh icon-on-right bigger-110"></span>
+                                        Reset                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end widget-body -->
+        </form>
+    </div>
+</div>						
 
 					
 

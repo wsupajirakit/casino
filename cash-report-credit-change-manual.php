@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -451,7 +451,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-money"></i>
 							<span class="menu-text"> Cash </span>
@@ -525,7 +525,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="cash-report-credit-change-manual.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Report Credit Change Manual
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">Report Credit</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,78 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadReport">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> Report Credit Change Manual </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+                        <form class="form-horizontal" id="frmSearch">
+                            <div class="form-group">
+                                <label class="col-xs-12 col-sm-1 control-label "><strong>Agent : </strong></label>
+                                <div class="col-xs-6 col-sm-2 pdTopButton">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="agent" name="agent">
+                                    </div>
+                                </div>
+                                <label class="col-xs-12 col-sm-1 control-label "><strong>Member : </strong></label>
+                                <div class="col-xs-6 col-sm-2 pdTopButton">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="member" name="member">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 pdTopButton">
+                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchReportCCM(this);">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                        <div id="divexcel" style="position:absolute;right:15px;top:5px;cursor:pointer;">
+                            <img src="./Main User Agent_files/excel.png" onclick="printExcel();">
+                        </div>
+                        <div class="table-responsive">
+                            <table id="tbReport" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">No </th>
+                                        <th class="text-center">Agent</th>
+                                        <th class="text-center">Member</th>
+                                        <th class="text-center">Transfer Datetime</th>
+                                        <th class="text-center">Amount Deposit/Withdrawal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>    </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="11">
+                                            Page <span class="badge badge-primary" name="pageNum">1</span> || Show <span name="listCount">0</span> Row                                            <div class="form-group pull-right">
+                                                <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="disabled" onclick="searchReportCCM(this);">
+                                                    <i class="ace-icon fa fa-arrow-left"></i>Prev                                                </button>
+                                                
+                                                <button type="button" class="btn btn-success btn-next btn-sm" disabled="disabled" name="nextPage" onclick="searchReportCCM(this);">
+                                                    Next <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>					
 
 					
 

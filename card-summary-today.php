@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -384,7 +384,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-trophy"></i>
 							<span class="menu-text"> Card </span>
@@ -395,7 +395,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="">
+							<li class="active">
 								<a href="card-summary-today.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Summary Today
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Card</a>
+              </li>
+              <li class="active">Summary Today</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,101 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder bgWeb" id="reloadSTL">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> Summary Today - Live </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+
+                <div class="row">
+                    <div class="col-xs-12 widthTable"> 
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="tbSummary" class="table table-bordered ">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="center">
+                                            <center>Time / Score </center>
+                                       <!--      <button class="btn btn-minier btn-grey" onclick="reSerchSummary();">
+                                                <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 47 &nbsp;&nbsp;</div>
+                                            </button> -->
+                                            <script type="text/javascript">
+                                                function timeCountDownSummary(){
+
+                                                    var fiveSeconds = new Date().getTime() + 59000;
+                                                    $('#clock').countdown(fiveSeconds, function(event) {
+                                                    var $this = $(this).html(event.strftime('<i class="fa fa-refresh fa-spin" aria-hidden="true"></i> %S &nbsp;&nbsp;'));
+
+                                                        if(event.strftime('%S')==0){
+                                                            searchSummaryTodayLive();
+                                                            timeCountDownSummary();
+                                                        }
+
+                                                    });
+
+                                                }
+                                                timeCountDownSummary();
+                                            </script>
+                                        </th>
+                                        <th rowspan="2"><center>Match</center></th>
+                                        <th colspan="2"><center>Full Time</center></th>
+                                        <th colspan="2"><center>Half Time</center></th>
+                                    </tr>
+                                    <tr>
+                                        <th><center>Handicap</center></th>
+                                        <th><center>Over/Under</center></th>
+                                        <th><center>Handicap</center></th>
+                                        <th><center>Over/Under</center></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+    
+    
+<script type="text/javascript">
+
+    function nFormatSoccer(num){
+
+        num = num.toString();
+        var re = /(-?\d+)(\d{3})/;
+        while (re.test(num)){
+            num = num.replace(re, "$1,$2");
+        }
+        return num;
+    }
+
+    // $(".digits").digits();
+    $(".digits1").each(function() {
+
+        var valNum = textToNum($(this).text());
+
+        if(valNum < 0){
+        
+            $(this).text(nFormatSoccer(Math.abs(valNum)));
+        }
+    });
+
+
+</script></tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>					
 
 					
 

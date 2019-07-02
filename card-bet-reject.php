@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -384,7 +384,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-trophy"></i>
 							<span class="menu-text"> Card </span>
@@ -422,7 +422,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="card-bet-reject.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bet Reject
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Card</a>
+              </li>
+              <li class="active">Bet Reject</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,86 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadBetReject">
+        <div class="widget-header hidden">
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload" id="reloadBetReject1">
+                    <i class="ace-icon fa fa-refresh"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main ">
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <form class="form-horizontal" id="frmSearchOutstanding">
+                            <div class="form-group">
+                                <label class="col-xs-2 col-sm-1 control-label" style="width:70px"><strong>Date : </strong></label>
+                                <div class="col-xs-12 col-sm-2">
+                                    <div class="input-group">
+                                        <input class="form-control date-picker" id="sdate" name="sdate" type="text" data-date-format="dd-mm-yyyy" value="03-07-2019" readonly="readonly" onchange="clearSearch();">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar bigger-110"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <label class="col-xs-2 col-sm-1 control-label" style="width:80px"><strong>Type : </strong></label>
+                                <div class="col-xs-12 col-sm-2" style="">
+                                    <select class="form-control col-xs-6 col-sm-6 input-sm" id="stype" name="stype" onchange="getUserBetReject(this);">
+                                        <option value="">Please select</option>
+                                        <option value="sc">Soccer</option>
+                                        <option value="sp">Sport</option>
+                                        <option value="st">Step</option>
+                                    </select>
+                                </div>
+                                <label class="col-xs-2 col-sm-1 control-label" style="width:70px"><strong>User : </strong></label>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control col-xs-6 col-sm-6 input-sm" id="suser" name="suser">
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <input type="text" id="suser1" name="suser1" value="" class="col-xs-12 col-sm-12" placeholder="username">
+                                </div>
+                                <div class="col-xs-2 col-sm-1">
+                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchBetReject();">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="table-responsive">
+                            <table id="tbBetReject" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-strong" style="text-align: left !important;"> Search </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6"><center><strong>No Data</strong></center></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="stepDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="table-responsive" id="tb_stepDetail">
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>						
 
 					
 

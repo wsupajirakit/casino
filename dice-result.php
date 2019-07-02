@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -317,7 +317,7 @@
 						</ul>
 					</li>
 					
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-trophy"></i>
 							<span class="menu-text"> Dice </span>
@@ -373,7 +373,7 @@
 								<b class="arrow"></b>
 							</li>	
 
-							<li class="">
+							<li class="active">
 								<a href="dice-result.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Result
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Dice</a>
+              </li>
+              <li class="active">Result</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,83 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadResult">
+        <div class="widget-header widget-header-blue widget-header-flat hidden">
+            <h4 class="widget-title lighter"><strong> Result Sport </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
+                    <i class="ace-icon fa fa-refresh"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+                        <form class="form-horizontal" method="">
+                            <div class="form-group">
+                                <label class="col-xs-2 col-sm-1 control-label no-padding-right" for="">Sport :</label>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6" id="slSport" onchange="getLeague();">
+                                                                                                                                    <option value="sc">Soccer</option>                                            
+                                                                                            <option value="bk">Basketball</option>                                            
+                                                                                            <option value="af">Football</option>                                            
+                                                                                            <option value="tn">Tennis</option>                                            
+                                                                                            <option value="ic">Ice Hockey</option>                                            
+                                                                                            <option value="bb">Baseball</option>                                            
+                                                                                            <option value="vb">Volleyball</option>                                            
+                                                                                            <option value="bt">Badminton</option>                                            
+                                                                                            <option value="my">Muay Thai</option>                                            
+                                                                                                                        </select>
+                                </div>
+                                <div class="col-xs-6 col-sm-8">
+                                    <select class="form-control col-xs-12 col-sm-6" id="slLeague" onchange="getMatch();">
+                                        <option value="" selected="">All League</option>
+                                                                                                                                                                </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-2 col-sm-1 no-padding-right" for="username">Date :</label>
+                                <div class="col-xs-10 col-sm-3">
+                                    <div class="input-group">
+                                        <input class="form-control date-picker" id="sdate" name="sdate" type="text" data-date-format="dd-mm-yyyy">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar bigger-110"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 pdDivBt">
+                                    <button type="button" class="btn btn-primary btn-sm" id="btn_search">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                    <button type="button" class="btn btn-info btn-sm" id="btn_today">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Today                                    </button>
+                                    <button type="button" class="btn btn-success btn-sm" id="btn_yesterday">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Yesterday                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="tb_result" class="table table-striped table-bordered table-hover text-center">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>						
 
 					
 

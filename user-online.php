@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -270,7 +270,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="user-online.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Online
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">User Online</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -597,7 +600,36 @@
 
 					<div class="page-content">
 						
-
+<div class="row pdTop">
+    <div class="col-xs-12">
+        <div class="widget-box widget-color-blue2">
+            <div class="widget-header">
+                <h4 class="widget-title lighter">User Online</h4>
+            </div>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>
+                                </p><div class="infobox infobox-blue infobox-small infobox-dark">
+                                    <div class="infobox-icon">
+                                        <i class="ace-icon fa fa-user"></i>
+                                    </div>
+                                    <div class="infobox-data">
+                                        <div class="infobox-content">Online</div>
+                                        <div class="infobox-content"></div>
+                                    </div>
+                                </div>
+                            <p></p>
+                            <p>
+                                                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 					
 
 					</div><!-- /.page-content -->

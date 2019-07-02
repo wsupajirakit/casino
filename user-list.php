@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -225,7 +225,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="user-list.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User List
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">User List</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,105 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadUserList">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> User List</strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+
+                        <form class="form-horizontal" id="frmSearch">
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-1 no-padding-right" for="username"><strong>Username:</strong></label>
+                                <div class="col-xs-12 col-sm-3">
+                                    <input type="text" id="username" name="username" value="" class="col-xs-12 col-sm-12" placeholder="username">
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control input-sm col-xs-6 col-sm-6" id="fuactive" name="fuactive">
+                                        <option value="Y">Normal</option>
+                                        <option value="B">No Bet</option>
+                                        <option value="N">Lock</option>
+                                        <option value="A">All</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control input-sm col-xs-6 col-sm-6" id="futype" name="futype">
+                                        <option value="M">Member</option>
+                                        <option value="A">Agent</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control input-sm col-xs-6 col-sm-6" id="list_sort" name="list_sort">
+                                        <option value="1">Create date by descending</option>
+                                        <option value="2">Create date by ascending</option>
+                                        <option value="3">Username by descending</option>
+                                        <option value="4">Username by ascending</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2 xx">
+                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchUserList(this);">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <!-- <div class="table-header" style="background-color:#3a87ad;">
+                            Results for "All User" 
+                        </div> -->
+
+                        <!-- div.table-responsive -->
+
+                        <!-- div.dataTables_borderWrap -->
+                        <div class="table-responsive">
+                            <table id="tbUserList" class="table table-bordered ">
+                                <thead><tr>
+    <th class="center">No </th>
+    <th>Username</th>
+    <th>&nbsp;&nbsp;Status&nbsp;&nbsp;</th>
+    <th>Credit</th>
+    <th>Cash Balance</th>
+    <th>Bet Credit</th>
+    <th>Outstanding</th>
+    <th> Manage </th>
+</tr></thead>
+
+                                <tbody>
+    </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="11">
+                                            Page <span class="badge badge-primary" name="pageNum">1</span> || Show <span name="listCount">0</span> Row                                            <div class="form-group pull-right">
+                                                <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="disabled" onclick="searchUserList(this);">
+                                                    <i class="ace-icon fa fa-arrow-left"></i>Prev                                                </button>
+                                                
+                                                <button type="button" class="btn btn-success btn-next btn-sm" disabled="disabled" name="nextPage" onclick="searchUserList(this);">
+                                                    Next <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div id="showModal"></div>
+</div>	
 
 					
 

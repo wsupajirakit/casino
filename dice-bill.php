@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -317,7 +317,7 @@
 						</ul>
 					</li>
 					
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-trophy"></i>
 							<span class="menu-text"> Dice </span>
@@ -346,7 +346,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="dice-bill.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bill
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Dice</a>
+              </li>
+              <li class="active">Bill</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,32 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+                    <div class="col-xs-12 widthTable">
+                        <div class="table-responsive">
+                            <table id="tbSportBill" class="table table-striped table-bordered table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th><strong>No</strong></th>
+                                        <th><strong>Type</strong></th>
+                                        <th><strong>Match</strong></th>
+                                        <th><strong>Stake</strong></th>
+                                        <th><strong>Share</strong></th>
+                                        <th><strong>Manage</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                                                                                                                                    </tbody>
+                                <tfoot>
+                                    <tr><td colspan="3"><strong>Total</strong></td>
+                                    <td class="num text-right" id="km_total"><strong>0.00</strong></td>
+                                    <td class="num text-right" id="ft_total"><strong>0.00</strong></td>
+                                    <td></td>
+                                </tr></tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>						
 
 					
 

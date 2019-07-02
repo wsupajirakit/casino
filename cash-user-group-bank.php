@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -451,7 +451,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-money"></i>
 							<span class="menu-text"> Cash </span>
@@ -552,7 +552,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="cash-user-group-bank.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Group Bank
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">User Group Bank</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,130 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="tabbable" style="max-width:1000px;">
+    <ul class="nav nav-tabs padding-12 tab-color-blue background-blue">
+        <li class="active">
+            <a data-toggle="tab" href="https://mm8betag.234ag.net/main#groupbank" onclick="groupList();">
+                <h7>GROUP &amp; BANK</h7>
+            </a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="https://mm8betag.234ag.net/main#usergroup">
+                <h7>USER GROUP</h7>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="groupbank" class="tab-pane fade in active">
+            <form class="form-horizontal" id="frmSaveGroup" action="https://mm8betag.234ag.net/main" method="post">
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-2 control-label "><strong> Group ID : </strong></label>
+                    <div class="col-xs-10 col-sm-2">
+                        <input type="text" id="groupid" name="groupid" class="col-xs-12 col-sm-12" maxlength="5">
+                    </div>
+                    <label class="col-xs-12 col-sm-2 control-label "><strong> Group Detail : </strong></label>
+                    <div class="col-xs-10 col-sm-4">
+                        <input type="text" id="groupdetail" name="groupdetail" class="col-xs-12 col-sm-12">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-4 col-sm-2 control-label "><strong> Status : </strong></label>
+                    <div class="col-xs-12 col-sm-5">
+                        <label style="margin-top:5px;">&nbsp;&nbsp;
+                            <input name="autoshow" id="autoshow" class="ace ace-switch ace-switch-6" type="checkbox" value="Y">
+                            <span class="lbl">&nbsp;&nbsp;Auto Show</span>
+                        </label>
+                        <label>
+                            <input name="autoget" id="autoget" class="ace ace-switch ace-switch-6" type="checkbox" value="Y">
+                            <span class="lbl">&nbsp;&nbsp;Auto Get</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-12 col-sm-3" style="margin-top:5px;">
+                        <button type="button" name="btSave" value="save" class="btn btn-minier btn-success" onclick="groupSave(&#39;save&#39;);">
+                            <i class="ace-icon fa fa-floppy-o bigger-150"></i>
+                            Save                        </button>
+                        <button class="btn btn-minier btn-danger" type="button" name="btDel" value="del" onclick="groupSave(&#39;del&#39;);">
+                            <i class="ace-icon fa fa-trash-o bigger-150"></i>
+                            Delete                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table id="tblGroupList" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="center">Group ID </th>
+                            <th>Group Detail</th>
+                            <th>Auto Show</th>
+                            <th>Auto Get</th>
+                            <th>Manage</th>
+                        </tr>
+                    </thead>
+
+                    <tbody><tr><td colspan="5"><center>No Data</center></td></tr></tbody>
+                </table>
+            </div>              
+        </div>
+        <div id="usergroup" class="tab-pane fade">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-2 control-label" style="max-width:90px"><strong>Username</strong></label>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="username" name="username">
+                        </div>
+                    </div>
+                    <label class="col-xs-12 col-sm-2 control-label" style="max-width:90px"><strong>Group ID</strong></label>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="input-group" style="width:100%;">
+                            <select class="form-control" id="inp_gid" name="inp_gid">
+                                <option value=""> All </option>
+                                                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <button type="button" name="search" class="btn btn-primary btn-sm" onclick="userGroupList();">
+                            <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                            Search                        </button>
+                    </div>
+                </div>
+            </form>
+             <div class="table-responsive">
+                <table id="tbUserGroupList" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">No </th>
+                            <th class="text-center">Username</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Group ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="red"><center><strong> No Data </strong></center></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="11">
+                                Page <span class="badge badge-primary" name="pageNum">0</span> || Show <span name="listCount">0</span> Row                                <div class="form-group pull-right">
+                                    <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="" onclick="userGroupList(this);">
+                                        <i class="ace-icon fa fa-arrow-left"></i>Prev                                    </button>
+                                    
+                                    <button type="button" class="btn btn-success btn-next btn-sm" disabled="" name="nextPage" onclick="userGroupList(this);">
+                                        Next <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>                
+        </div>
+    </div>
+    <div id="showModal"></div>
+</div>						
 
 					
 

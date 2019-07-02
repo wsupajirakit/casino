@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -261,7 +261,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="user-structure.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Structure
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">User Structure</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,21 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <br>
+    <div class="col-xs-12 col-sm-12">
+        <div class="widget-box widget-color-blue2">
+            <div class="widget-header">
+                <h4 class="widget-title lighter">User Structure</h4>
+            </div>
+            <div class="widget-body">
+                <div class="widget-main padding-8">
+                    <ul id="tree" class="tree tree-unselectable" role="tree"><li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">				<div class="tree-branch-header">					<span class="tree-branch-name">						<i class="icon-folder ace-icon tree-plus"></i>						<span class="tree-label"></span>					</span>				</div>				<ul class="tree-branch-children" role="group"></ul>				<div class="tree-loader" role="alert"><div class="tree-loading"><i class="ace-icon fa fa-refresh fa-spin blue"></i></div></div>						</li><li class="tree-item hide" data-template="treeitem" role="treeitem">				<span class="tree-item-name">				  				  <span class="tree-label"></span>				</span>			</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>					
 
 					
 

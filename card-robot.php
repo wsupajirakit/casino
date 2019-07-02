@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -384,7 +384,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-trophy"></i>
 							<span class="menu-text"> Card </span>
@@ -431,7 +431,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="card-robot.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Robot
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Card</a>
+              </li>
+              <li class="active">Robot</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,145 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder " id="reloadRobot">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> ROBOT </strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+
+                <div class="row">
+                    <div class="col-xs-12 widthTable">
+                        
+                        <form class="form-horizontal" id="frmSearchDeposit">
+                            <div class="form-group">
+                                <div class="col-xs-4 col-sm-1" style="width:100px">
+                                    <select class="form-control col-xs-12 col-sm-6" id="vtype" name="vtype" width="20">
+                                        <option value="T">Today</option>
+                                        <option value="L">Live</option>
+                                        <option value="A">All</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-1" style="width:120px">
+                                    <select class="form-control col-xs-12 col-sm-6" id="vmoney" name="vmoney">
+                                        <option value="0"> &gt; 0 </option>
+                                        <option value="999"> &gt; 999 </option>
+                                        <option value="4999"> &gt; 4,999 </option>
+                                        <option value="9999"> &gt; 9,999 </option>
+                                        <option value="19999"> &gt; 19,999 </option>
+                                        <option value="49999"> &gt; 49,999 </option>
+                                        <option value="99999"> &gt; 99,999 </option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6" id="vdate" name="vdate">
+                                                                                                                                    <option value="2019-07-03"> 2019-07-03 </option>
+                                            
+                                                                                            <option value="2019-07-02"> 2019-07-02 </option>
+                                            
+                                                                                            <option value="2019-07-01"> 2019-07-01 </option>
+                                            
+                                                                                            <option value="2019-06-30"> 2019-06-30 </option>
+                                            
+                                                                                            <option value="2019-06-29"> 2019-06-29 </option>
+                                            
+                                                                                            <option value="2019-06-28"> 2019-06-28 </option>
+                                            
+                                                                                            <option value="2019-06-27"> 2019-06-27 </option>
+                                            
+                                                                                            <option value="2019-06-26"> 2019-06-26 </option>
+                                            
+                                                                                            <option value="2019-06-25"> 2019-06-25 </option>
+                                            
+                                                                                            <option value="2019-06-24"> 2019-06-24 </option>
+                                            
+                                                                                                                            
+                                    </select>
+                                </div>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="vip" name="vip" placeholder="IP" value="" class="col-xs-10 col-sm-12">
+                                </div>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="vuser" name="vuser" placeholder="Username" value="" class="col-xs-10 col-sm-12">
+                                </div>
+                                <div class="col-xs-4 col-sm-2">
+                                    <select class="form-control col-xs-12 col-sm-6" id="sort" name="sort">
+                                        <option value=""> Time by ascending </option>
+                                        <option value="1"> User by ascending </option>
+                                        <option value="2"> User by descending </option>
+                                        <option value="3"> Ip by ascending </option>
+                                        <option value="4"> Ip by descending </option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-9 col-sm-1">
+                                    <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchRobot(this);">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <!-- <div class="table-header" style="background-color:#1D87B1">
+                            Results for "All ROBOT"
+                        </div> -->
+
+                        <!-- div.table-responsive -->
+                        <div class="table-responsive">
+                            <table id="tbRobot" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Bet ID </th>
+                                        <th class="text-center">User ID </th>
+                                        <th class="text-center">League Name </th>
+                                        <th class="text-center">Team Home </th>
+                                        <th class="text-center">Team Away </th>
+                                        <th class="text-center">HF </th>
+                                        <th class="text-center">Type </th>
+                                        <th class="text-center">Bet </th>                           
+                                        <th class="text-center">Bet Money </th>                     
+                                        <th class="text-center">Ball </th>
+                                        <th class="text-center">Price </th>
+                                        <th class="text-center">Diff </th>
+                                        <th class="text-center">Bet Time </th>
+                                        <th class="text-center">Bet IP </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td colspan="16" align="center">No Data</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="16">
+                                            Page <span class="badge badge-primary" name="pageNum">0</span> || Show <span name="listCount">0</span> Row                                            <div class="form-group pull-right">
+                                                <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="" onclick="searchRobot(this);">
+                                                    <i class="ace-icon fa fa-arrow-left"></i>Prev                                                </button>
+                                                
+                                                <button type="button" class="btn btn-success btn-next btn-sm" disabled="" name="nextPage" onclick="searchRobot(this);">
+                                                    Next <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>					
 
 					
 

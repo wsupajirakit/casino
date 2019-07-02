@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -297,7 +297,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="change-password.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Change Password
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">Change Password</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,48 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="pdTop">
+    <div class="widget-box col-xs-12 col-sm-8" id="loadChangePass">
+        <form class="form-horizontal" id="frmChangePass" method="post">
+            <div class="widget-body">
+               <div class="widget-main no-padding">
+                    <div class="dialogs">
+                        <div class="itemdiv dialogdiv">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Current password : </strong></label>
+                                <div class="col-sm-5">
+                                    <input type="password" name="current_password" placeholder="Current password" class="col-xs-10 col-sm-12">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label no-padding-right" for="form-field-1"><strong> New password : </strong></label>
+                                <div class="col-sm-5">
+                                    <input type="password" name="new_password" placeholder="New password" class="col-xs-10 col-sm-12">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label no-padding-right" for="form-field-1"><strong> Confirm new password : </strong></label>
+                                <div class="col-sm-5">
+                                    <input type="password" name="confirm_new_password" placeholder="Confirm new password" class="col-xs-10 col-sm-12">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-4 col-md-8">
+                                    <button type="button" class="btn btn-primary" onclick="saveChangePass();">
+                                        <span class="fa fa fa-floppy-o icon-on-right bigger-110"></span>
+                                        Save                                    </button>
+                                    <button type="reset" class="btn btn-danger">
+                                        <span class="fa fa-refresh icon-on-right bigger-110"></span>
+                                        Reset                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end widget-body -->
+        </form>
+    </div>
+</div>						
 
 					
 

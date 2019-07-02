@@ -187,7 +187,7 @@
 				</div> -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -196,7 +196,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Member Setup </span>
@@ -288,7 +288,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="monitor-casino.php">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Monitor Casino
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Member Setup</a>
+              </li>
+              <li class="active">Monitor Casino</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -596,7 +599,115 @@
 					</div>
 
 					<div class="page-content">
-						
+<div class="row">
+    <div class="widget-box hidden-boder" id="reloadMonitor">
+        <div class="widget-header widget-header-blue widget-header-flat" style="display:none;">
+            <h4 class="widget-title lighter"><strong> Monitor Casino</strong></h4>
+            <div class="widget-toolbar hidden">
+                <a href="https://mm8betag.234ag.net/main#" data-action="reload"> </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" id="validation-form">
+                            <div class="form-group">
+                                <label class="control-label col-xs-3 col-sm-1 " for="username"><strong>Date :</strong></label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <div class="input-group">
+                                        <input class="form-control date-picker" id="sdate" name="sdate" type="text" data-date-format="dd-mm-yyyy" value="03-07-2019" readonly="readonly">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar bigger-110"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <label class="control-label col-xs-3 col-sm-1 " for="win-Lost"><strong>Win/loss:</strong></label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="money" name="money" class="col-xs-12 col-sm-12 numeric" placeholder="Win-Lose" value="9,999">
+                                </div>
+                                <label class="control-label col-xs-3 col-sm-1 " for=""><strong> User ID:</strong></label>
+                                <div class="col-xs-9 col-sm-2">
+                                    <input type="text" id="suser" name="suser" class="col-xs-12 col-sm-12" placeholder="User ID">
+                                </div>
+                                <div class="col-xs-12 col-sm-2">
+                                    <button type="button" class="btn btn-primary btn-sm" onclick="searchMonitorCasino();">
+                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                                        Search                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="clearfix">
+                            <div class="pull-right tableTools-container"></div>
+                        </div>
+                        <!-- <div class="table-header" style="background-color:#0C475E;">
+                            Results for "All Monitor Casino"
+                        </div> -->
+
+                        <!-- div.table-responsive -->
+
+                        <!-- div.dataTables_borderWrap -->
+                        <div class="table-responsive">
+                            <table id="tbMonitor" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" class="center">Username </th>
+                                        <th colspan="4"><center>SAGaming</center></th>
+                                        <th colspan="4"><center>Party&amp;Joker&amp;Slotcity</center></th>
+                                        <th colspan="4"><center>Vivo</center></th>
+                                        <th colspan="4"><center>Cock Fight</center></th>
+                                        <th colspan="4"><center>TGP</center></th>
+                                        <th colspan="4"><center>FG</center></th>
+                                        <th colspan="4"><center>Horse</center></th>
+                                    </tr>
+                                    <tr>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                        <th><center>Cnt</center></th>
+                                        <th><center>Dept</center></th>
+                                        <th><center>Winloss</center></th>
+                                        <th><center>Outs</center></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>						
 
 					
 
