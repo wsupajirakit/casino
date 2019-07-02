@@ -19,9 +19,15 @@ if(isset($_POST['submit']))
 								$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
 								if(!$objResult)
 								{
+
 									echo '<script type="text/javascript">';
-									echo 'setTimeout(function () { swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning");';
-									echo '}, 1000);</script>';
+									echo 'setTimeout(function () {';
+									echo 'swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning").then( function(val) {';
+									echo 'if (val == true) window.location.href = \'login.php\';';
+									echo '});';
+									echo '}, 200);  </script>';
+
+	
 								}
 								else
 								{
@@ -341,6 +347,12 @@ if(isset($_POST['submit']))
 
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
+
+		if ( window.history.replaceState ) {
+				window.history.replaceState( null, null, window.location.href );
+		}
+
+
 			jQuery(function($) {
 			 $(document).on('click', '.toolbar a[data-target]', function(e) {
 				e.preventDefault();
