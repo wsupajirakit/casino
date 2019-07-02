@@ -3,41 +3,52 @@ include('./env/config.php');
 error_reporting(0);
 ini_set('display_errors', 0);
 
-if (session_status() == PHP_SESSION_NONE) {
-		session_start();
-}
 
-				$username = $_POST['username'];
-				$password = $_POST['password'];
+if(isset($_POST['submit']))
+{
 
-				$strSQL = "SELECT * FROM user WHERE username =  '$username' and password = '$password'";
-				$objQuery = mysqli_query($objCon,$strSQL);
-				$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
-				if(!$objResult)
-				{
-					echo '<script type="text/javascript">';
-					echo 'setTimeout(function () { swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning");';
-					echo '}, 1000);</script>';
-				}
-				else
-				{
-						$_SESSION["id"] = $objResult["id"];
-						$_SESSION["username"] = $objResult["username"];
-						$_SESSION["role"] = $objResult["role"];
-						session_write_close();
-
-						if($objResult["role"] == "admin")
-						{
-							header("location:index.html");
-						}
-						else
-						{
-							// header("location:user_page.php");
-						}
+				if (session_status() == PHP_SESSION_NONE) {
+						session_start();
 				}
 
-				mysqli_close($objCon);
+								$username = $_POST['username'];
+								$password = $_POST['password'];
 
+								$strSQL = "SELECT * FROM user WHERE username =  '$username' and password = '$password'";
+								$objQuery = mysqli_query($objCon,$strSQL);
+								$objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
+								if(!$objResult)
+								{
+
+									echo '<script type="text/javascript">';
+									echo 'setTimeout(function () {';
+									echo 'swal("ล้มเหลว!","username หรือ password ไม่ถูกต้อง","warning").then( function(val) {';
+									echo 'if (val == true) window.location.href = \'login.php\';';
+									echo '});';
+									echo '}, 200);  </script>';
+
+	
+								}
+								else
+								{
+										$_SESSION["id"] = $objResult["id"];
+										$_SESSION["username"] = $objResult["username"];
+										$_SESSION["role"] = $objResult["role"];
+										session_write_close();
+
+										if($objResult["role"] == "admin")
+										{
+											header("location:index.html");
+										}
+										else
+										{
+											// header("location:user_page.php");
+										}
+								}
+
+								mysqli_close($objCon);
+
+			}
 
 
 ?>
@@ -336,6 +347,12 @@ if (session_status() == PHP_SESSION_NONE) {
 
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
+
+		if ( window.history.replaceState ) {
+				window.history.replaceState( null, null, window.location.href );
+		}
+
+
 			jQuery(function($) {
 			 $(document).on('click', '.toolbar a[data-target]', function(e) {
 				e.preventDefault();
