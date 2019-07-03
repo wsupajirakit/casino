@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -585,7 +585,7 @@
 							<li>
                 <a href="#">Cash</a>
               </li>
-              <li class="active">Deposit list</li>
+              <li class="active">Deposit List</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -633,8 +633,8 @@
                                 <div class="col-xs-12 col-sm-3">
                                     <button type="button" name="search" id="search" class="btn btn-primary btn-sm" onclick="searchDepositList(this);">
                                         Search                                    </button>
-                                    <button type="button" disabled="" class="btn btn-sm btn-yellow">
-                                        <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 52 &nbsp;&nbsp;</div>
+                                  <!--   <button type="button" disabled="" class="btn btn-sm btn-yellow"> -->
+                                       <!--  <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 52 &nbsp;&nbsp;</div> -->
                                         <script type="text/javascript">
                                             function timeCountDownDeposit(){
 

@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -654,13 +654,13 @@
                                 <thead>
                                     <tr>
                                         <th rowspan="2" class="center">Username </th>
-                                        <th colspan="4"><center>SAGaming</center></th>
-                                        <th colspan="4"><center>Party&amp;Joker&amp;Slotcity</center></th>
-                                        <th colspan="4"><center>Vivo</center></th>
-                                        <th colspan="4"><center>Cock Fight</center></th>
-                                        <th colspan="4"><center>TGP</center></th>
-                                        <th colspan="4"><center>FG</center></th>
-                                        <th colspan="4"><center>Horse</center></th>
+                                        <th colspan="4"><center>Rca777</center></th>
+                                        <th colspan="4"><center>Game</center></th>
+                                        <th colspan="4"><center>Game 2</center></th>
+                                        <th colspan="4"><center>Game 3</center></th>
+                                        <th colspan="4"><center>Game 4</center></th>
+                                        <th colspan="4"><center>Game 5</center></th>
+                                        <th colspan="4"><center>Game 6</center></th>
                                     </tr>
                                     <tr>
                                         <th><center>Cnt</center></th>

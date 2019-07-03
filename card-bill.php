@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -608,7 +608,7 @@
                                     <tr>
                                         <th><strong>No</strong></th>
                                         <th><strong>Type</strong></th>
-                                        <th><strong>Match</strong></th>
+                                        <th><strong>Table</strong></th>
                                         <th><strong>Stake</strong></th>
                                         <th><strong>Share</strong></th>
                                         <th><strong>Manage</strong></th>

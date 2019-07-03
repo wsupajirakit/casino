@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -582,7 +582,10 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li>
+                <a href="#">Cash</a>
+              </li>
+              <li class="active">Control Auto Deposit</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">

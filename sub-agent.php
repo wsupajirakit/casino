@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -614,8 +614,8 @@
                                 <div class="col-xs-9 col-sm-2">
                                     <div class="input-group">
                                         <span class="input-group-addon">
-                                            <strong> mmm88xxt@</strong>
-                                            <input type="hidden" name="usermain" value="mmm88xxt@">
+                                            <strong> Rca777</strong>
+                                            <input type="hidden" name="usermain" value="Rca777">
                                         </span>
                                         <input type="text" id="username" name="username" placeholder="Username" class="col-xs-12 col-sm-12">
                                     </div>

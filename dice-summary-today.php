@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -644,14 +644,14 @@
                                             </script>
                                         </th>
                                         <th rowspan="2"><center>Match</center></th>
-                                        <th colspan="2"><center>Full Time</center></th>
-                                        <th colspan="2"><center>Half Time</center></th>
+                                        <th colspan="2"><center>Table</center></th>
+                                        <th colspan="2"><center>Table 2</center></th>
                                     </tr>
                                     <tr>
-                                        <th><center>Handicap</center></th>
-                                        <th><center>Over/Under</center></th>
-                                        <th><center>Handicap</center></th>
-                                        <th><center>Over/Under</center></th>
+                                        <th><center>Standing</center></th>
+                                        <th><center>Total/Balance</center></th>
+                                        <th><center>Standing</center></th>
+                                        <th><center>Total/Balance</center></th>
                                     </tr>
                                 </thead>
 

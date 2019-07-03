@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -585,7 +585,7 @@
 							<li>
                 <a href="#">Card</a>
               </li>
-              <li class="active">Win or lose by player</li>
+              <li class="active">Win or Lose By Player</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -638,11 +638,11 @@
                             <table id="tb_winLoseByTeam" class="table table-striped table-bordered table-hover text-center">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2"><strong>Team Home</strong></th>
-                                        <th rowspan="2"><strong>Team Away</strong></th>
+                                        <th rowspan="2"><strong>Table</strong></th>
+                                        <th rowspan="2"><strong>Table 2</strong></th>
                                         <th rowspan="2"><strong>Keep Money</strong></th>
-                                        <th><strong>Full Time</strong></th>
-                                        <th><strong>Half Time</strong></th>
+                                        <th><strong>Table</strong></th>
+                                        <th><strong>Table 2</strong></th>
                                         <th rowspan="2"><strong>Commission</strong></th>
                                         <th rowspan="2"><strong>Total</strong></th>
                                     </tr>

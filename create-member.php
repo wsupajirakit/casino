@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -636,7 +636,7 @@ Max                            </span>
 <div class="col-xs-12 col-sm-4">
 <div class="input-group clearfix">
 <span class="input-group-addon">
-mmm88xxt 
+Rca777 
 </span>
 <input type="text" id="username" name="username" class="inputEngNum" value="" maxlength="5" placeholder="Username">
 </div>
@@ -676,57 +676,57 @@ mmm88xxt
 <div class="tabbable">
 <ul class="nav nav-tabs padding-12 tab-color-blue background-blue">
 <li class="active">
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#soccer" onclick="utab(&#39;soccer&#39;);">
+<a data-toggle="tab" href="#soccer" onclick="utab(&#39;soccer&#39;);">
 <i class="menu-icon fa fa-futbol-o"></i>
-<h7>Soccer</h7>
+<h7>Game 1</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#sport" onclick="utab(&#39;sport&#39;);">
+<a data-toggle="tab" href="#sport" onclick="utab(&#39;sport&#39;);">
 <i class="menu-icon fa fa-futbol-o"></i>
-<h7>Sport</h7>
+<h7>Game 2</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#step" onclick="utab(&#39;step&#39;);">
+<a data-toggle="tab" href="#step" onclick="utab(&#39;step&#39;);">
 <i class="menu-icon fa fa-futbol-o"></i>
-<h7>Step</h7>
+<h7>Game 3</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#casino" onclick="utab(&#39;casino&#39;);">
+<a data-toggle="tab" href="#casino" onclick="utab(&#39;casino&#39;);">
 <i class="menu-icon fa fa-puzzle-piece"></i>
-<h7>Casino</h7>
+<h7>Game 4</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#lotto" onclick="utab(&#39;lotto&#39;);">
+<a data-toggle="tab" href="#lotto" onclick="utab(&#39;lotto&#39;);">
 <i class="menu-icon fa fa-retweet"></i>
-<h7>Lotto</h7>
+<h7>Game 5</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#lotto_set" onclick="utab(&#39;lotto_set&#39;);">
+<a data-toggle="tab" href="#lotto_set" onclick="utab(&#39;lotto_set&#39;);">
 <i class="menu-icon fa fa-line-chart"></i>
-<h7>Lotto SET</h7>
+<h7>Game 6</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#lotto_lao" onclick="utab(&#39;lotto_lao&#39;);">
+<a data-toggle="tab" href="#lotto_lao" onclick="utab(&#39;lotto_lao&#39;);">
 <i class="menu-icon fa fa-line-chart"></i>
-<h7>Lotto Lao</h7>
+<h7>Game 7</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#lottery" onclick="utab(&#39;lottery&#39;);">
+<a data-toggle="tab" href="#lottery" onclick="utab(&#39;lottery&#39;);">
 <i class="menu-icon fa fa-cubes"></i>
-<h7>Lottery</h7>
+<h7>Game 8</h7>
 </a>
 </li>
 <li>
-<a data-toggle="tab" href="https://mm8betag.234ag.net/main#game" onclick="utab(&#39;game&#39;);">
+<a data-toggle="tab" href="#game" onclick="utab(&#39;game&#39;);">
 <i class="menu-icon fa fa-gamepad"></i>
-<h7>Game</h7>
+<h7>Game 9</h7>
 </a>
 </li>
 </ul>
@@ -738,11 +738,11 @@ mmm88xxt
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="soccer_today_active" checked="">
-<span class="lbl"> Soccer Today </span>
+<span class="lbl"> Game 1 Today </span>
 </label> &nbsp;
 <label class="inline">
 <input type="checkbox" class="ace" name="soccer_live_active" checked="">
-<span class="lbl"> Soccer Live </span>
+<span class="lbl"> Game 1 Live </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -852,11 +852,11 @@ MaxValue                                                    </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="sport_today_active" checked="checked">
-<span class="lbl">Sport Today</span>
+<span class="lbl">Game 2 Today</span>
 </label> &nbsp;
 <label class="inline">
 <input type="checkbox" class="ace" name="sport_live_active" checked="checked">
-<span class="lbl">Sport Live</span>
+<span class="lbl">Game 2 Live</span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -914,7 +914,7 @@ MaxValue                                                </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="step_active" checked="checked">
-<span class="lbl"> Step  </span>
+<span class="lbl"> Game 3  </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -1096,7 +1096,7 @@ MaxValue                                                </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="casino_active" checked="checked">
-<span class="lbl"> Casino </span>
+<span class="lbl"> Game 4 </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -1109,7 +1109,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box" style="">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">SAGaming</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1153,7 +1153,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">SunMacau&amp;Allbet&amp;Sexy&amp;Party&amp;Joker&amp;Slotcity Casino</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1190,7 +1190,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">Vivo Casino</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1234,7 +1234,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">Fishing Game&amp;Casino</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1271,7 +1271,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">TGP Casino&amp;Slot</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1307,7 +1307,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6" style="">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">Cock Fight</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1344,7 +1344,7 @@ MaxValue                                                </button>
 <div class="col-xs-12 col-sm-6 col-md-6">
 <div class="widget-box">
 <div class="widget-header widget-header-flat  text-center">
-<h4 class="widget-title smaller">Horse</h4>
+<h4 class="widget-title smaller">Rca777</h4>
 </div>
 <div class="widget-body">
 <div class="widget-main">
@@ -1385,7 +1385,7 @@ MaxValue                                                </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="lotto_active" checked="checked">
-<span class="lbl"> Lotto </span>
+<span class="lbl"> Game 5 </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -1409,7 +1409,7 @@ MaxValue                                                    </button>
 </thead>
 <tbody>
 <tr class="text-center">
-<td width="35%">3 ตัวบน</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1432,7 +1432,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">3 ตัวบนโต๊ด</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1455,7 +1455,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">3 ตัวบนวิ่ง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1478,7 +1478,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">2 ตัวบน</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1501,7 +1501,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">3 ตัวล่าง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1524,7 +1524,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">2 ตัวล่าง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1547,7 +1547,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">2 ตัวล่างวิ่ง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1589,7 +1589,7 @@ MaxValue                                                    </button>
 </thead>
 <tbody>
 <tr class="text-center">
-<td width="35%">บน 2 ใน 3</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1612,7 +1612,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">บน 3 ใน 4</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1635,7 +1635,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">บน 3 ใน 5</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1658,7 +1658,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">ปักหลักหน่วย</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1681,7 +1681,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">ปักหลักสิบ</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1704,7 +1704,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">ปักหลักร้อย</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1742,7 +1742,7 @@ MaxValue                                                    </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="lotto_share_active" checked="checked">
-<span class="lbl"> Lotto SET </span>
+<span class="lbl"> Game 6 </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -1766,7 +1766,7 @@ MaxValue                                                    </button>
 </thead>
 <tbody>
 <tr class="text-center">
-<td width="35%">2 ตัว</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1789,7 +1789,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">เลขวิ่ง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1827,7 +1827,7 @@ MaxValue                                                    </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="lotto_lao_active" checked="checked">
-<span class="lbl"> Lotto Lao </span>
+<span class="lbl"> Game 7 </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -1851,7 +1851,7 @@ MaxValue                                                    </button>
 </thead>
 <tbody>
 <tr class="text-center">
-<td width="35%">3 ตัวตรง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1874,7 +1874,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">3 ตัวโต๊ด</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1897,7 +1897,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">2 ตัวตรง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1920,7 +1920,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">2 ตัวโต๊ด</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1962,7 +1962,7 @@ MaxValue                                                    </button>
 </thead>
 <tbody>
 <tr class="text-center">
-<td width="35%">1 ตัววิ่ง</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -1985,7 +1985,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">สูง-ต่ำ</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -2008,7 +2008,7 @@ MaxValue                                                    </button>
 </td>
 </tr>
 <tr class="text-center">
-<td width="35%">คู่-คี่</td>
+<td width="35%">Rca777</td>
 <td width="30%">
 <div class="col-xs-12 col-sm-12 col-md-12">
 <div class="clearfix">
@@ -2045,7 +2045,7 @@ MaxValue                                                    </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="lottery_active" checked="checked">
-<span class="lbl"> Lottery  </span>
+<span class="lbl"> Game 8  </span>
 </label>
 </div>
 <div class="form-inline pull-right">
@@ -2074,7 +2074,7 @@ MaxValue                                                </button>
 <div class="form-inline pull-left">
 <label class="inline">
 <input type="checkbox" class="ace" name="game_active" checked="checked">
-<span class="lbl"> Game  </span>
+<span class="lbl"> Game 9</span>
 </label>
 </div>
 <div class="form-inline pull-right">

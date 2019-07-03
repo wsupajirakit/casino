@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -662,37 +662,37 @@
                                                 </tr>
                                                 <tr>
                                                                                                                                                                         <th>
-                                                                <span class="lbl"> Step </span>
+                                                                <span class="lbl"> Game </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> SC.Today </span>
+                                                                <span class="lbl"> Game.Today </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> SC.Live </span>
+                                                                <span class="lbl"> Game.Live </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> SP.Today </span>
+                                                                <span class="lbl"> Game.Today </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> SP.Live </span>
+                                                                <span class="lbl"> Game.Live </span>
                                                             </th>
                                                                                                                     <th>
                                                                 <span class="lbl"> Game </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> Casino </span>
+                                                                <span class="lbl"> Game 2 </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> Lottery </span>
+                                                                <span class="lbl"> Game 3 </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> Lotto </span>
+                                                                <span class="lbl"> Game 4 </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> Lotto SET </span>
+                                                                <span class="lbl"> Game 5 </span>
                                                             </th>
                                                                                                                     <th>
-                                                                <span class="lbl"> Lotto Lao </span>
+                                                                <span class="lbl"> Game 6 </span>
                                                             </th>
                                                                                                                     <th>
                                                                 <span class="lbl"> Transfer </span>

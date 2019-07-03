@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -634,7 +634,7 @@
                             </div>
                         </form>
                         <div id="divexcel" style="position:absolute;right:15px;top:5px;cursor:pointer;">
-                            <img src="./Main User Agent_files/excel.png" onclick="printExcel();">
+                          <!--   <img src="./Main User Agent_files/excel.png" onclick="printExcel();"> -->
                         </div>
                         <div class="table-responsive">
                             <table id="tbReport" class="table table-striped table-bordered table-hover">

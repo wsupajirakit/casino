@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -695,14 +695,13 @@
                                     <tr>
                                         <th class="text-center">Bet ID </th>
                                         <th class="text-center">User ID </th>
-                                        <th class="text-center">League Name </th>
-                                        <th class="text-center">Team Home </th>
-                                        <th class="text-center">Team Away </th>
-                                        <th class="text-center">HF </th>
+                                        <th class="text-center">Table Name </th>
+                                
+                                  
                                         <th class="text-center">Type </th>
                                         <th class="text-center">Bet </th>                           
                                         <th class="text-center">Bet Money </th>                     
-                                        <th class="text-center">Ball </th>
+                 	
                                         <th class="text-center">Price </th>
                                         <th class="text-center">Diff </th>
                                         <th class="text-center">Bet Time </th>

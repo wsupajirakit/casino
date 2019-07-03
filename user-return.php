@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -600,368 +600,368 @@
 
 					<div class="page-content">
 <div class="row">
-    <div class="widget-box hidden-boder" id="relodUReturn">
-        <div class="widget-header widget-header-blue widget-header-flat hidden">
-            <h4 class="widget-title lighter"><strong>User Return</strong></h4>
-            <div class="widget-toolbar hidden">
-                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
-                    <i class="ace-icon fa fa-refresh"></i>
-                </a>
-            </div>
-        </div>
-        <div class="widget-body">
-            <div class="widget-main">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <form class="form-horizontal" id="userReturnForm">
-                            <div class="form-group">
-                                <label class="control-label col-xs-12 col-sm-1 no-padding-right" for="fuser">Username:</label>
-                                <div class="col-xs-12 col-sm-3">
-                                    <input type="text" id="fuser" name="fuser" class="col-xs-12 col-sm-12" placeholder="Username">
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="fuactive" onchange="getUReturn(1,1);">
-                                        <option value="Y">Normal</option>
-                                        <option value="B">No Bet</option>
-                                        <option value="N">Lock</option>
-                                        <option value="A">All</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="futype" onchange="getUReturn(1,1);">
-                                        <option value="M">Member</option>
-                                        <option value="A">Agent</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="list_sort" onchange="getUReturn(1,1);">
-                                        <option value="1">Create date by descending</option>
-                                        <option value="2">Create date by ascending</option>
-                                        <option value="3">Username by descending</option>
-                                        <option value="4">Username by ascending</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-12 col-sm-2">
-                                    <button type="button" class="btn btn-primary btn-sm" id="btn_search">
-                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
-                                        Search                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="widget-box">
-                            <div class="widget-body">
-                                <div class="widget-main no-padding">
-                                    <div class="table-responsive">
-                                        <table id="tb_userreturn" class="table table-striped table-bordered table-hover text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th rowspan="3" class="center">No </th>
-                                                    <th rowspan="3" class="center">Edit </th>
-                                                    <th rowspan="3">Username</th>
-                                                    <th colspan="13"><center>Return Percent</center></th>
-                                                </tr>
-                                                <tr>
-                                                                                                                                                                                                                                        <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_step" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Step </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sctoday" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SC.Today </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sclive" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SC.Live </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sptoday" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SP.Today </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_splive" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SP.Live </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_game" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Game </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_casino" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SAGaming </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_party" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Party&amp;Joker&amp;Slotcity </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_vivo" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Vivo </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_allbet" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Cock Fight </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_tgp" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> TGP </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_fg" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> FG </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_rcb" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Horse </span>
-                                                                        </label>
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                        </tr>
-                                                <tr>
-                                                                                                                                                                        <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_step" onclick="setAllSl(&#39;get_return_step&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_step" onclick="setAllSl(&#39;get_return_step&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sctoday" onclick="setAllSl(&#39;get_return_sctoday&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sctoday" onclick="setAllSl(&#39;get_return_sctoday&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sclive" onclick="setAllSl(&#39;get_return_sclive&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sclive" onclick="setAllSl(&#39;get_return_sclive&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sptoday" onclick="setAllSl(&#39;get_return_sptoday&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sptoday" onclick="setAllSl(&#39;get_return_sptoday&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_splive" onclick="setAllSl(&#39;get_return_splive&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_splive" onclick="setAllSl(&#39;get_return_splive&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_game" onclick="setAllSl(&#39;get_return_game&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_game" onclick="setAllSl(&#39;get_return_game&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_casino" onclick="setAllSl(&#39;get_return_casino&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_casino" onclick="setAllSl(&#39;get_return_casino&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_party" onclick="setAllSl(&#39;get_return_party&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_party" onclick="setAllSl(&#39;get_return_party&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_vivo" onclick="setAllSl(&#39;get_return_vivo&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_vivo" onclick="setAllSl(&#39;get_return_vivo&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_allbet" onclick="setAllSl(&#39;get_return_allbet&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_allbet" onclick="setAllSl(&#39;get_return_allbet&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_tgp" onclick="setAllSl(&#39;get_return_tgp&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_tgp" onclick="setAllSl(&#39;get_return_tgp&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_fg" onclick="setAllSl(&#39;get_return_fg&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_fg" onclick="setAllSl(&#39;get_return_fg&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_rcb" onclick="setAllSl(&#39;get_return_rcb&#39;,&#39;N&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_rcb" onclick="setAllSl(&#39;get_return_rcb&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                                                            </tr>
-                                            </thead>
-                                            <tbody><tr><td colspan="13" class="text-danger"> Not found data. </td></tr></tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
+<div class="widget-box hidden-boder" id="relodUReturn">
+<div class="widget-header widget-header-blue widget-header-flat hidden">
+<h4 class="widget-title lighter"><strong>User Return</strong></h4>
+<div class="widget-toolbar hidden">
+<a href="https://mm8betag.234ag.net/main#" data-action="reload">
+<i class="ace-icon fa fa-refresh"></i>
+</a>
+</div>
+</div>
+<div class="widget-body">
+<div class="widget-main">
+<div class="row">
+<div class="col-xs-12">
+<form class="form-horizontal" id="userReturnForm">
+<div class="form-group">
+<label class="control-label col-xs-12 col-sm-1 no-padding-right" for="fuser">Username:</label>
+<div class="col-xs-12 col-sm-3">
+<input type="text" id="fuser" name="fuser" class="col-xs-12 col-sm-12" placeholder="Username">
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-12 col-sm-6 input-sm" name="fuactive" onchange="getUReturn(1,1);">
+<option value="Y">Normal</option>
+<option value="B">No Bet</option>
+<option value="N">Lock</option>
+<option value="A">All</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-12 col-sm-6 input-sm" name="futype" onchange="getUReturn(1,1);">
+<option value="M">Member</option>
+<option value="A">Agent</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-12 col-sm-6 input-sm" name="list_sort" onchange="getUReturn(1,1);">
+<option value="1">Create date by descending</option>
+<option value="2">Create date by ascending</option>
+<option value="3">Username by descending</option>
+<option value="4">Username by ascending</option>
+</select>
+</div>
+<div class="col-xs-12 col-sm-2">
+<button type="button" class="btn btn-primary btn-sm" id="btn_search">
+<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+Search                                    </button>
+</div>
+</div>
+</form>
+<div class="widget-box">
+<div class="widget-body">
+<div class="widget-main no-padding">
+<div class="table-responsive">
+<table id="tb_userreturn" class="table table-striped table-bordered table-hover text-center">
+<thead>
+<tr>
+<th rowspan="3" class="center">No </th>
+<th rowspan="3" class="center">Edit </th>
+<th rowspan="3">Username</th>
+<th colspan="13"><center>Return Percent</center></th>
+</tr>
+<tr>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_step" disabled="disabled">
+<span class="lbl"> Game </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sctoday" disabled="disabled">
+<span class="lbl"> Game.Today </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sclive" disabled="disabled">
+<span class="lbl"> Game.Live </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_sptoday" disabled="disabled">
+<span class="lbl"> Game.Today </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_splive" disabled="disabled">
+<span class="lbl"> Game.Live </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_game" disabled="disabled">
+<span class="lbl"> Rca777 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_casino" disabled="disabled">
+<span class="lbl"> Game </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_party" disabled="disabled">
+<span class="lbl"> Game 2 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_vivo" disabled="disabled">
+<span class="lbl"> Game 3 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_allbet" disabled="disabled">
+<span class="lbl"> Game 4 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_tgp" disabled="disabled">
+<span class="lbl"> Game 5 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_fg" disabled="disabled">
+<span class="lbl"> Game 6 </span>
+</label>
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_get_return_rcb" disabled="disabled">
+<span class="lbl"> Game 7 </span>
+</label>
+</div>
+</th>
+</tr>
+<tr>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_step" onclick="setAllSl(&#39;get_return_step&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_step" onclick="setAllSl(&#39;get_return_step&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sctoday" onclick="setAllSl(&#39;get_return_sctoday&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sctoday" onclick="setAllSl(&#39;get_return_sctoday&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sclive" onclick="setAllSl(&#39;get_return_sclive&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sclive" onclick="setAllSl(&#39;get_return_sclive&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sptoday" onclick="setAllSl(&#39;get_return_sptoday&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_sptoday" onclick="setAllSl(&#39;get_return_sptoday&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_splive" onclick="setAllSl(&#39;get_return_splive&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_splive" onclick="setAllSl(&#39;get_return_splive&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_game" onclick="setAllSl(&#39;get_return_game&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_game" onclick="setAllSl(&#39;get_return_game&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_casino" onclick="setAllSl(&#39;get_return_casino&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_casino" onclick="setAllSl(&#39;get_return_casino&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_party" onclick="setAllSl(&#39;get_return_party&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_party" onclick="setAllSl(&#39;get_return_party&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_vivo" onclick="setAllSl(&#39;get_return_vivo&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_vivo" onclick="setAllSl(&#39;get_return_vivo&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_allbet" onclick="setAllSl(&#39;get_return_allbet&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_allbet" onclick="setAllSl(&#39;get_return_allbet&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_tgp" onclick="setAllSl(&#39;get_return_tgp&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_tgp" onclick="setAllSl(&#39;get_return_tgp&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_fg" onclick="setAllSl(&#39;get_return_fg&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_fg" onclick="setAllSl(&#39;get_return_fg&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_rcb" onclick="setAllSl(&#39;get_return_rcb&#39;,&#39;N&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-info btn-block btn-xs ck_get_return_rcb" onclick="setAllSl(&#39;get_return_rcb&#39;,&#39;Y&#39;);" disabled="disabled">Get</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+</tr>
+</thead>
+<tbody><tr><td colspan="13" class="text-danger"> Not found data. </td></tr></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 					
 

@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -600,81 +600,81 @@
 
 					<div class="page-content">
 <div class="row">
-    <div class="widget-box hidden-boder" id="reloadResult">
-        <div class="widget-header widget-header-blue widget-header-flat hidden">
-            <h4 class="widget-title lighter"><strong> Result Sport </strong></h4>
-            <div class="widget-toolbar hidden">
-                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
-                    <i class="ace-icon fa fa-refresh"></i>
-                </a>
-            </div>
-        </div>
-        <div class="widget-body">
-            <div class="widget-main">
-                <div class="row">
-                    <div class="col-xs-12 widthTable">
-                        <form class="form-horizontal" method="">
-                            <div class="form-group">
-                                <label class="col-xs-2 col-sm-1 control-label no-padding-right" for="">Sport :</label>
-                                <div class="col-xs-4 col-sm-2">
-                                    <select class="form-control col-xs-12 col-sm-6" id="slSport" onchange="getLeague();">
-                                                                                                                                    <option value="sc">Soccer</option>                                            
-                                                                                            <option value="bk">Basketball</option>                                            
-                                                                                            <option value="af">Football</option>                                            
-                                                                                            <option value="tn">Tennis</option>                                            
-                                                                                            <option value="ic">Ice Hockey</option>                                            
-                                                                                            <option value="bb">Baseball</option>                                            
-                                                                                            <option value="vb">Volleyball</option>                                            
-                                                                                            <option value="bt">Badminton</option>                                            
-                                                                                            <option value="my">Muay Thai</option>                                            
-                                                                                                                        </select>
-                                </div>
-                                <div class="col-xs-6 col-sm-8">
-                                    <select class="form-control col-xs-12 col-sm-6" id="slLeague" onchange="getMatch();">
-                                        <option value="" selected="">All League</option>
-                                                                                                                                                                </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-xs-2 col-sm-1 no-padding-right" for="username">Date :</label>
-                                <div class="col-xs-10 col-sm-3">
-                                    <div class="input-group">
-                                        <input class="form-control date-picker" id="sdate" name="sdate" type="text" data-date-format="dd-mm-yyyy">
-                                        <span class="input-group-addon">
-                                            <i class="fa fa-calendar bigger-110"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 pdDivBt">
-                                    <button type="button" class="btn btn-primary btn-sm" id="btn_search">
-                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
-                                        Search                                    </button>
-                                    <button type="button" class="btn btn-info btn-sm" id="btn_today">
-                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
-                                        Today                                    </button>
-                                    <button type="button" class="btn btn-success btn-sm" id="btn_yesterday">
-                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
-                                        Yesterday                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="clearfix">
-                            <div class="pull-right tableTools-container"></div>
-                        </div>
-                        <div class="table-responsive">
-                            <table id="tb_result" class="table table-striped table-bordered table-hover text-center">
-                                <thead>
-                                    <tr></tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="widget-box hidden-boder" id="reloadResult">
+<div class="widget-header widget-header-blue widget-header-flat hidden">
+<h4 class="widget-title lighter"><strong> Result Game </strong></h4>
+<div class="widget-toolbar hidden">
+<a href="https://mm8betag.234ag.net/main#" data-action="reload">
+<i class="ace-icon fa fa-refresh"></i>
+</a>
+</div>
+</div>
+<div class="widget-body">
+<div class="widget-main">
+<div class="row">
+<div class="col-xs-12 widthTable">
+<form class="form-horizontal" method="">
+<div class="form-group">
+<label class="col-xs-2 col-sm-1 control-label no-padding-right" for="">Table :</label>
+<div class="col-xs-4 col-sm-2">
+<select class="form-control col-xs-12 col-sm-6" id="slSport" onchange="getLeague();">
+<option value="sc">Table</option>                                            
+<option value="bk">Table 2</option>                                            
+<option value="af">Table 3</option>                                            
+<option value="tn">Table 4</option>                                            
+<option value="ic">Table 5</option>                                            
+<option value="bb">Table 6</option>                                            
+<option value="vb">Table 7</option>                                            
+<option value="bt">Table 8</option>                                            
+<option value="my">Table 9</option>                                            
+</select>
+</div>
+<div class="col-xs-6 col-sm-8">
+<select class="form-control col-xs-12 col-sm-6" id="slLeague" onchange="getMatch();">
+<option value="" selected="">All Table</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-xs-2 col-sm-1 no-padding-right" for="username">Date :</label>
+<div class="col-xs-10 col-sm-3">
+<div class="input-group">
+<input class="form-control date-picker" id="sdate" name="sdate" type="text" data-date-format="dd-mm-yyyy">
+<span class="input-group-addon">
+<i class="fa fa-calendar bigger-110"></i>
+</span>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 pdDivBt">
+<button type="button" class="btn btn-primary btn-sm" id="btn_search">
+<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+Search                                    </button>
+<button type="button" class="btn btn-info btn-sm" id="btn_today">
+<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+Today                                    </button>
+<button type="button" class="btn btn-success btn-sm" id="btn_yesterday">
+<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+Yesterday                                    </button>
+</div>
+</div>
+</form>
+<div class="clearfix">
+<div class="pull-right tableTools-container"></div>
+</div>
+<div class="table-responsive">
+<table id="tb_result" class="table table-striped table-bordered table-hover text-center">
+<thead>
+<tr></tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>						
 
 					

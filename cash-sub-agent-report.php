@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -585,7 +585,7 @@
 							<li>
                 <a href="#">Cash</a>
               </li>
-              <li class="active">Sub agent report</li>
+              <li class="active">Sub Agent Report</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -644,7 +644,7 @@
                             </div>
                         </form>
                         <div id="divexcel" style="position:absolute;right:15px;top:5px;cursor:pointer;">
-                            <img src="./Main User Agent_files/excel.png" onclick="printExcel(&#39;&#39;,&#39;a&#39;);">
+                          <!--   <img src="./Main User Agent_files/excel.png" onclick="printExcel(&#39;&#39;,&#39;a&#39;);"> -->
                         </div>
                         <div class="table-responsive">
                             <table id="tbReport" class="table table-striped table-bordered table-hover">

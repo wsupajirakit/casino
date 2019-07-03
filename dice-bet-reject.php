@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -627,9 +627,9 @@
                                 <div class="col-xs-12 col-sm-2" style="">
                                     <select class="form-control col-xs-6 col-sm-6 input-sm" id="stype" name="stype" onchange="getUserBetReject(this);">
                                         <option value="">Please select</option>
-                                        <option value="sc">Soccer</option>
-                                        <option value="sp">Sport</option>
-                                        <option value="st">Step</option>
+                                        <option value="sc">Table</option>
+                                        <option value="sp">Table 2</option>
+                                        <option value="st">Table 3</option>
                                     </select>
                                 </div>
                                 <label class="col-xs-2 col-sm-1 control-label" style="width:70px"><strong>User : </strong></label>

@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -601,368 +601,368 @@
 					<div class="page-content">
 
 <div class="row">
-    <div class="widget-box hidden-boder" id="relodUKeep">
-        <div class="widget-header widget-header-blue widget-header-flat hidden">
-            <h4 class="widget-title lighter"><strong>User Keep</strong></h4>
-            <div class="widget-toolbar hidden">
-                <a href="https://mm8betag.234ag.net/main#" data-action="reload">
-                    <i class="ace-icon fa fa-refresh"></i>
-                </a>
-            </div>
-        </div>
-        <div class="widget-body">
-            <div class="widget-main">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <form class="form-horizontal" id="userKeepForm">
-                            <div class="form-group">
-                                <label class="control-label col-xs-12 col-sm-1 no-padding-right" for="fuser">Username:</label>
-                                <div class="col-xs-12 col-sm-3">
-                                    <input type="text" id="fuser" name="fuser" class="col-xs-12 col-sm-12" placeholder="Username">
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-6 col-sm-6 input-sm" name="fuactive" onchange="getUKeep(1,1);">
-                                        <option value="Y">Normal</option>
-                                        <option value="B">No Bet</option>
-                                        <option value="N">Lock</option>
-                                        <option value="A">All</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-6 col-sm-6 input-sm" name="futype" onchange="getUKeep(1,1);">
-                                        <option value="M">Member</option>
-                                        <option value="A">Agent</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-6 col-sm-2">
-                                    <select class="form-control col-xs-12 col-sm-6 input-sm" name="list_sort" onchange="getUKeep(1,1);">
-                                        <option value="1">Create date by descending</option>
-                                        <option value="2">Create date by ascending</option>
-                                        <option value="3">Username by descending</option>
-                                        <option value="4">Username by ascending</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-12 col-sm-2">
-                                    <button type="button" class="btn btn-primary btn-sm" id="btn_search">
-                                        <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
-                                        Search                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="widget-box ">
-                            <div class="widget-body">
-                                <div class="widget-main no-padding">
-                                    <div class="table-responsive">
-                                        <t>
-                                                                                                                                                                        </t><table id="tb_userkeep" class="table table-striped table-bordered table-hover text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th rowspan="3" class="center">No </th>
-                                                    <th rowspan="3" class="center">Edit </th>
-                                                    <th rowspan="3">Username</th>
-                                                    <th colspan="13"><center>Keep Percent</center></th>
-                                                </tr>
-                                                <tr>
-                                                                                                                                                                                                                                        <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_step_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Step </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_today_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SC.Today </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_live_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SC.Live </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_sporttoday_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SP.Today </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_sportlive_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SP.Live </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_game_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Game </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_casino_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> SAGaming </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_party_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Party&amp;Joker&amp;Slotcity </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_vivo_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Vivo </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_allbet_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Cock Fight </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_tgp_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> TGP </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_fg_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> FG </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                                                <th>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                                                                                                            <input class="ace ace-checkbox-2" type="checkbox" id="cka_rcb_setup" disabled="disabled">
-                                                                                                                                                        <span class="lbl"> Horse </span>
-                                                                        </label> 
-                                                                    </div>
-                                                                </th>
-                                                                                                                                                                                                                        </tr>
-                                                <tr><th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_step_setup" onclick="setAllSl(&#39;step_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_step_setup" onclick="setAllSl(&#39;step_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_today_setup" onclick="setAllSl(&#39;today_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_today_setup" onclick="setAllSl(&#39;today_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_live_setup" onclick="setAllSl(&#39;live_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_live_setup" onclick="setAllSl(&#39;live_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sporttoday_setup" onclick="setAllSl(&#39;sporttoday_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sporttoday_setup" onclick="setAllSl(&#39;sporttoday_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sportlive_setup" onclick="setAllSl(&#39;sportlive_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sportlive_setup" onclick="setAllSl(&#39;sportlive_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_game_setup" onclick="setAllSl(&#39;game_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_game_setup" onclick="setAllSl(&#39;game_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_casino_setup" onclick="setAllSl(&#39;casino_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_casino_setup" onclick="setAllSl(&#39;casino_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_party_setup" onclick="setAllSl(&#39;party_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_party_setup" onclick="setAllSl(&#39;party_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_vivo_setup" onclick="setAllSl(&#39;vivo_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_vivo_setup" onclick="setAllSl(&#39;vivo_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_allbet_setup" onclick="setAllSl(&#39;allbet_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_allbet_setup" onclick="setAllSl(&#39;allbet_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_tgp_setup" onclick="setAllSl(&#39;tgp_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_tgp_setup" onclick="setAllSl(&#39;tgp_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_fg_setup" onclick="setAllSl(&#39;fg_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_fg_setup" onclick="setAllSl(&#39;fg_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                    <th>
-                                                                <table width="100%">
-                                                                    <thead>
-                                                                        <tr><th>
-                                                                            </th><td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_rcb_setup" onclick="setAllSl(&#39;rcb_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button type="button" class="btn btn-light btn-success btn-block btn-xs ck_rcb_setup" onclick="setAllSl(&#39;rcb_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
-                                                                            </td>
-                                                                        
-                                                                    </tr></thead>
-                                                                </table>
-                                                            </th>
-                                                                                                                                                            </tr>
-                                            </thead>
-                                            <tbody><tr><td colspan="13" class="text-danger"> Not found data. </td></tr></tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
+<div class="widget-box hidden-boder" id="relodUKeep">
+<div class="widget-header widget-header-blue widget-header-flat hidden">
+<h4 class="widget-title lighter"><strong>User Keep</strong></h4>
+<div class="widget-toolbar hidden">
+<a href="https://mm8betag.234ag.net/main#" data-action="reload">
+<i class="ace-icon fa fa-refresh"></i>
+</a>
+</div>
+</div>
+<div class="widget-body">
+<div class="widget-main">
+<div class="row">
+<div class="col-xs-12">
+<form class="form-horizontal" id="userKeepForm">
+<div class="form-group">
+<label class="control-label col-xs-12 col-sm-1 no-padding-right" for="fuser">Username:</label>
+<div class="col-xs-12 col-sm-3">
+<input type="text" id="fuser" name="fuser" class="col-xs-12 col-sm-12" placeholder="Username">
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-6 col-sm-6 input-sm" name="fuactive" onchange="getUKeep(1,1);">
+<option value="Y">Normal</option>
+<option value="B">No Bet</option>
+<option value="N">Lock</option>
+<option value="A">All</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-6 col-sm-6 input-sm" name="futype" onchange="getUKeep(1,1);">
+<option value="M">Member</option>
+<option value="A">Agent</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-2">
+<select class="form-control col-xs-12 col-sm-6 input-sm" name="list_sort" onchange="getUKeep(1,1);">
+<option value="1">Create date by descending</option>
+<option value="2">Create date by ascending</option>
+<option value="3">Username by descending</option>
+<option value="4">Username by ascending</option>
+</select>
+</div>
+<div class="col-xs-12 col-sm-2">
+<button type="button" class="btn btn-primary btn-sm" id="btn_search">
+<span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+Search                                    </button>
+</div>
+</div>
+</form>
+<div class="widget-box ">
+<div class="widget-body">
+<div class="widget-main no-padding">
+<div class="table-responsive">
+<t>
+</t><table id="tb_userkeep" class="table table-striped table-bordered table-hover text-center">
+<thead>
+<tr>
+<th rowspan="3" class="center">No </th>
+<th rowspan="3" class="center">Edit </th>
+<th rowspan="3">Username</th>
+<th colspan="13"><center>Keep Percent</center></th>
+</tr>
+<tr>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_step_setup" disabled="disabled">
+<span class="lbl"> Game </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_today_setup" disabled="disabled">
+<span class="lbl"> Game.Today </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_live_setup" disabled="disabled">
+<span class="lbl">Game.Live </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_sporttoday_setup" disabled="disabled">
+<span class="lbl"> Game.Today </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_sportlive_setup" disabled="disabled">
+<span class="lbl"> Game.Live </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_game_setup" disabled="disabled">
+<span class="lbl"> Game </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_casino_setup" disabled="disabled">
+<span class="lbl"> Game 2 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_party_setup" disabled="disabled">
+<span class="lbl"> Game 3 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_vivo_setup" disabled="disabled">
+<span class="lbl"> Game 4 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_allbet_setup" disabled="disabled">
+<span class="lbl"> Game 5 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_tgp_setup" disabled="disabled">
+<span class="lbl"> Game 6 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_fg_setup" disabled="disabled">
+<span class="lbl"> Game 7 </span>
+</label> 
+</div>
+</th>
+<th>
+<div class="checkbox">
+<label>
+<input class="ace ace-checkbox-2" type="checkbox" id="cka_rcb_setup" disabled="disabled">
+<span class="lbl"> Game 8 </span>
+</label> 
+</div>
+</th>
+</tr>
+<tr><th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_step_setup" onclick="setAllSl(&#39;step_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_step_setup" onclick="setAllSl(&#39;step_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_today_setup" onclick="setAllSl(&#39;today_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_today_setup" onclick="setAllSl(&#39;today_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_live_setup" onclick="setAllSl(&#39;live_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_live_setup" onclick="setAllSl(&#39;live_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sporttoday_setup" onclick="setAllSl(&#39;sporttoday_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sporttoday_setup" onclick="setAllSl(&#39;sporttoday_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sportlive_setup" onclick="setAllSl(&#39;sportlive_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_sportlive_setup" onclick="setAllSl(&#39;sportlive_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_game_setup" onclick="setAllSl(&#39;game_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_game_setup" onclick="setAllSl(&#39;game_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_casino_setup" onclick="setAllSl(&#39;casino_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_casino_setup" onclick="setAllSl(&#39;casino_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_party_setup" onclick="setAllSl(&#39;party_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_party_setup" onclick="setAllSl(&#39;party_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_vivo_setup" onclick="setAllSl(&#39;vivo_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_vivo_setup" onclick="setAllSl(&#39;vivo_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_allbet_setup" onclick="setAllSl(&#39;allbet_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_allbet_setup" onclick="setAllSl(&#39;allbet_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_tgp_setup" onclick="setAllSl(&#39;tgp_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_tgp_setup" onclick="setAllSl(&#39;tgp_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_fg_setup" onclick="setAllSl(&#39;fg_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_fg_setup" onclick="setAllSl(&#39;fg_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+<th>
+<table width="100%">
+<thead>
+<tr><th>
+</th><td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_rcb_setup" onclick="setAllSl(&#39;rcb_setup&#39;,&#39;min&#39;);" disabled="disabled">No</button>
+</td>
+<td>
+<button type="button" class="btn btn-light btn-success btn-block btn-xs ck_rcb_setup" onclick="setAllSl(&#39;rcb_setup&#39;,&#39;max&#39;);" disabled="disabled">Yes</button>
+</td>
+
+</tr></thead>
+</table>
+</th>
+</tr>
+</thead>
+<tbody><tr><td colspan="13" class="text-danger"> Not found data. </td></tr></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 					
 

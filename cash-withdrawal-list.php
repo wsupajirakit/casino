@@ -125,7 +125,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="#">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -585,7 +585,7 @@
 							<li>
                 <a href="#">Cash</a>
               </li>
-              <li class="active">Withdrawal list</li>
+              <li class="active">Withdrawal List</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -633,8 +633,8 @@
                                         <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
                                         Search 
                                     </button>
-                                    <button type="button" disabled="" class="btn btn-sm btn-yellow">
-                                        <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 26 &nbsp;&nbsp;</div>
+                                  <!--   <button type="button" disabled="" class="btn btn-sm btn-yellow">
+                                        <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 26 &nbsp;&nbsp;</div> -->
                                         <script type="text/javascript">
                                             // timeCountDown('search');
                                             function timeCountDownWithdrawal(){
